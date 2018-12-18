@@ -5,11 +5,12 @@
 
 use app\widgets\Alert;
 use yii\helpers\Html;
-//use yii\bootstrap\Nav;
-//use yii\bootstrap\NavBar;
-//use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
+
+
+
 $userInfo = Yii::$app->geo->getData();
+var_dump($userInfo);
 
 AppAsset::register($this);
 ?>
@@ -89,7 +90,7 @@ AppAsset::register($this);
                             Ваш город:
                         </div>
                         <div class="header__city">
-                            <?= $userInfo['city']?>
+                            <?//= $userInfo['city']?>
                         </div>
                     </div>
                     <div class="header__login">
@@ -127,7 +128,7 @@ AppAsset::register($this);
                 Ваш город:
             </div>
             <div class="header__city">
-                <?= $userInfo['city']?>
+                <?//= $userInfo['city']?>
             </div>
         </div>
         <div class="header__burger">
@@ -149,8 +150,11 @@ AppAsset::register($this);
             <div class="header__links-item">Вакансии</div>
             <div class="header__links-item">Статьи</div>
         </div>
-<!--        <div class="header__login" style="display: none;">-->
-        <div class="header__login" >
+        <?php  if (!Yii::$app->user->isGuest) { ?>
+        <div class="header__login" style="display: none;">
+            <?php }else{ ?>
+        <div class="header__login">
+            <?php } ?>
             <a href="?form=login">Вход</a> /<a href="?form=reg"> Регистрация</a>
             <div class="header__login-icon">
                 <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -164,54 +168,54 @@ AppAsset::register($this);
 
             </div>
         </div>
-<!--        <div class="header__account header__account&#45;&#45;general">-->
-<!--        <span>Личный кабинет</span>-->
-<!--        <div class="header__account-icon">-->
-<!--        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">-->
-<!--        <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="40" height="40">-->
-<!--        <rect width="40" height="40" rx="20" fill="white">-->
-<!--        </mask>-->
-<!--        <g mask="url(#mask0)">-->
-<!--        <g filter="url(#filter0_d)">-->
-<!--        <rect width="40" height="40" rx="20" fill="white">-->
-<!--        </g>-->
-<!--        <path d="M19.9998 19.7373C22.631 19.7373 24.7642 17.1098 24.7642 13.8687C24.7642 10.6274 24.0639 8 19.9998 8C15.9358 8 15.2354 10.6274 15.2354 13.8687C15.2354 17.1098 17.3685 19.7373 19.9998 19.7373Z"-->
-<!--        fill="#EDEDED">-->
-<!--        <path d="M28.9884 28.4609C28.9178 23.9438 28.4383 22.0108 25.4001 20.8968C23.7385 20.2876 21.7697 21.1997 19.9999 21.1997C18.2301 21.1997 16.2611 20.2876 14.5995 20.8969C11.6029 21.9957 11.0956 23.8913 11.0146 28.2775C11.0063 28.7264 11.0025 28.75 11.001 28.6979C11.0023 29.0882 11.0919 29.4768 11.3671 29.7536C12.1359 30.5271 14.3423 31.9993 19.9999 31.9993C25.9434 31.9993 28.0781 30.3745 28.7386 29.642C28.9319 29.4275 28.9979 29.141 28.9985 28.8523C28.997 28.8845 28.994 28.8221 28.9884 28.4609Z"-->
-<!--        fill="#EDEDED">-->
-<!--        </g>-->
-<!--        <defs>-->
-<!--        <filter id="filter0_d" x="-6" y="-4" width="52" height="52" filterUnits="userSpaceOnUse"-->
-<!--        color-interpolation-filters="sRGB">-->
-<!--        <feFlood flood-opacity="0" result="BackgroundImageFix">-->
-<!--        <feColorMatrix in="SourceAlpha" type="matrix"-->
-<!--        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0">-->
-<!--        <feOffset dy="2">-->
-<!--        <feGaussianBlur stdDeviation="3">-->
-<!--        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0">-->
-<!--        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow">-->
-<!--        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape">-->
-<!--        </filter>-->
-<!--        </defs>-->
-<!--        </svg>-->
-<!--        </div>-->
+            <?php  if (!Yii::$app->user->isGuest) { ?>
+        <div class="header__account header__account&#45;&#45;general">
+        <span>Личный кабинет</span>
+        <div class="header__account-icon">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="40" height="40">
+        <rect width="40" height="40" rx="20" fill="white">
+        </mask>
+        <g mask="url(#mask0)">
+        <g filter="url(#filter0_d)">
+        <rect width="40" height="40" rx="20" fill="white"/>
+        </g>
+        <path d="M19.9998 19.7373C22.631 19.7373 24.7642 17.1098 24.7642 13.8687C24.7642 10.6274 24.0639 8 19.9998 8C15.9358 8 15.2354 10.6274 15.2354 13.8687C15.2354 17.1098 17.3685 19.7373 19.9998 19.7373Z"
+        fill="#EDEDED"/>
+        <path d="M28.9884 28.4609C28.9178 23.9438 28.4383 22.0108 25.4001 20.8968C23.7385 20.2876 21.7697 21.1997 19.9999 21.1997C18.2301 21.1997 16.2611 20.2876 14.5995 20.8969C11.6029 21.9957 11.0956 23.8913 11.0146 28.2775C11.0063 28.7264 11.0025 28.75 11.001 28.6979C11.0023 29.0882 11.0919 29.4768 11.3671 29.7536C12.1359 30.5271 14.3423 31.9993 19.9999 31.9993C25.9434 31.9993 28.0781 30.3745 28.7386 29.642C28.9319 29.4275 28.9979 29.141 28.9985 28.8523C28.997 28.8845 28.994 28.8221 28.9884 28.4609Z"
+        fill="#EDEDED"/>
+        </g>
+        <defs>
+        <filter id="filter0_d" x="-6" y="-4" width="52" height="52" filterUnits="userSpaceOnUse"
+        color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix">
+        <feColorMatrix in="SourceAlpha" type="matrix"
+        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0">
+        <feOffset dy="2">
+        <feGaussianBlur stdDeviation="3">
+        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0">
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow">
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape">
+        </filter>
+        </defs>
+        </svg>
+        </div>
 
-<!--        <div class="header__account-menu">-->
-<!--        <div class="header__account-item">Редактировать профиль</div>-->
-<!--        <div class="header__account-item">Настройки</div>-->
-<!--        <div class="header__account-item">Избранное</div>-->
-<!--        <div class="header__account-item">Мои вакансии</div>-->
-<!--        <div class="header__account-item">Выйти</div>-->
-<!--        </div>-->
-<!--        </div>-->
-<!--        </div>-->
+        <div class="header__account-menu">
+        <div class="header__account-item">Редактировать профиль</div>
+        <div class="header__account-item">Настройки</div>
+        <div class="header__account-item">Избранное</div>
+        <div class="header__account-item">Мои вакансии</div>
+        <div class="header__account-item"><a href="/site/logout">Выйти</a> </div>
+        </div>
+        </div>
+        </div>
+            <?php } ?>
 
     </div>
 </header>
 
-
 <?= $content ?>
-
 
 <footer class="footer footer--big">
     <div class="container">
@@ -266,13 +270,8 @@ AppAsset::register($this);
     </div>
 </footer>
 
-<!--<script type="text/javascript" src="//minime.stephan-brumme.com/files/jquery/jquery-3.3.1.min.js"></script>-->
-<!--<script type="text/javascript" src="http://minime.stephan-brumme.com/files/jquery/jquery-1.11.0.min.js"></script>-->
-<!--<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>-->
-<!--<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.js"></script>-->
-<!--<script type="text/javascript" src="../../web/slick/slick.min.js"></script>-->
-<!--<script src="../../web/template/main/main.js"></script>-->
 <?php $this->endBody() ?>
+
 </body>
 </html>
 <?php $this->endPage() ?>

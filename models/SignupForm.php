@@ -12,6 +12,7 @@ class SignupForm extends Model
 {
 
     public $email;
+    public $phone;
     public $password;
 
     /**
@@ -22,6 +23,7 @@ class SignupForm extends Model
         return [
             ['email', 'trim'],
             ['email', 'required'],
+            ['phone', 'required'],
             ['email', 'email'],
             ['email', 'string', 'max' => 255],
             ['email', 'unique', 'targetClass' => '\app\models\User', 'message' => 'This email address has already been taken.'],
@@ -43,10 +45,21 @@ class SignupForm extends Model
         }
 
         $user = new User();
+
         $user->email = $this->email;
+        $user->phone = $this->phone;
         $user->setPassword($this->password);
         $user->generateAuthKey();
         return $user->save() ? $user : null;
+    }
+
+    public function attributeLabels()
+    {
+        return [
+            'email' => '',
+            'phone' => '',
+            'password' => '',
+        ];
     }
 
 }

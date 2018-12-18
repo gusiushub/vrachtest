@@ -4264,7 +4264,15 @@ $this->title = 'Главная страница';
  if(isset($_GET['form'])){
   if($_GET['form']=='login'){
 ?>
-      <form action="" method="post">
+<!--      <form action="" method="post">-->
+      <?php $form = ActiveForm::begin([
+          'id' => 'login-form',
+          'layout' => 'horizontal',
+          'fieldConfig' => [
+              'template' => "{label}\n<div class=\"col-lg-3\">{input}</div>\n<div class=\"col-lg-8\">{error}</div>",
+              'labelOptions' => ['class' => 'col-lg-1 control-label'],
+          ],
+      ]); ?>
     <div class="popup-wrapper popup-wrapper&#45;&#45;login">
     <div class="popup login">
         <a href="?form=close">
@@ -4283,17 +4291,19 @@ transform="matrix(0.706942 0.707271 -0.706942 0.707271 2.97583 0.998047)" fill="
 свой текущий логин и пароль
 </div>
 
-<input type="text"      name="login"    class="login__input" placeholder="E-mail или номер телефона">
-<input type="password"  name="pass"     class="login__input" placeholder="Пароль">
+<!--<input type="text"      name="login"    class="login__input" placeholder="E-mail или номер телефона">-->
+        <?= $form->field($model, 'email')->textInput(['autofocus' => true,'class'=>'login__input','placeholder'=>'E-mail или номер телефона']) ?>
+        <?= $form->field($model, 'password')->passwordInput(['class'=>'login__input', 'placeholder'=>'Пароль']) ?>
+<!--<input type="password"  name="pass"     class="login__input" placeholder="Пароль">-->
 <input type="submit"    name="login"    class="button button&#45;&#45;save" value="Войти">
 <div class="login__links">
 <div class="login__links-item"><a href="#">Забыли пароль?</a> </div>
-<div class="login__links-item"><a href="#">Регистрация</a> </div>
+<div class="login__links-item"><a href="/?form=reg">Регистрация</a> </div>
 
 </div>
 </div>
 </div>
-      </form >
+      <?php ActiveForm::end(); ?>
 <?php
   }
  }
@@ -4324,6 +4334,7 @@ transform="matrix(0.706942 0.707271 -0.706942 0.707271 2.97583 0.998047)" fill="
 if(isset($_GET['form'])){
 if($_GET['form']=='reg'){
 ?>
+    <?php $form = ActiveForm::begin(['id' => 'form-signup']); ?>
 <div class="popup-wrapper popup-wrapper&#45;&#45;registration">
 <div class="registration">
     <a href="?form=close">
@@ -4336,15 +4347,17 @@ transform="matrix(0.706942 0.707271 -0.706942 0.707271 2.97583 0.998047)" fill="
 </svg>
     </a>
 <div class="registration__header">Регистрация</div>
-<input type="text" class="registration__input" placeholder="Введите ваш e-mail">
-<input type="tel" class="registration__input" placeholder="Ваш номер телефона">
-<input type="password" class="registration__input" placeholder="Пароль">
-<button class="button button&#45;&#45;save">Зарегистрироваться</button>
+    <?= $form->field($model, 'email')->textInput(['autofocus' => true,'class'=>'registration__input', 'placeholder'=>'Введите ваш e-mail']) ?>
+    <?= $form->field($model, 'phone')->textInput(['class'=>'registration__input', 'placeholder'=>'Ваш номер телефона']) ?>
+    <?= $form->field($model, 'password')->passwordInput(['class'=>'registration__input', 'placeholder'=>'Пароль']) ?>
+
+    <input type="submit"    name="login"    class="button button&#45;&#45;save" value="Зарегистрироваться">
 <div class="registration__terms">
 Регистрируясь на этом сайте, вы принимаете<br>нашу <a href="#">политику конфиденциальности</a>
 </div>
 </div>
 </div>
+    <?php ActiveForm::end(); ?>
 <?php
 }
 }
