@@ -1,0 +1,103 @@
+@import '../ui/variables.scss';
+
+
+.subscription {
+  padding-top: 41px;
+  padding-bottom: 89px;
+
+  &--empty {
+    display: none;
+    padding-top: 93px;
+    padding-bottom: 89px;
+
+    .subscription__header {
+      display: block;
+      font-size: 26px;
+      line-height: 30px;
+      color: #243C57;
+      border: none;
+
+      p {
+        font-family: MPLUS-Regular, sans-serif;
+        margin-top: 30px;
+        font-size: 20px;
+      }
+    }
+  }
+
+  .container {
+  }
+
+  &__wrapper {
+    max-width: 925px;
+  }
+
+  &__header {
+    display: flex;
+    padding-bottom: 26px;
+    border-bottom: 1px solid #E2E2E2;
+    font-family: MPLUS-Medium, sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    color: #243C57;
+  }
+  &__header-date {
+    width: 148px;
+  }
+  &__header-name {
+    width: 429px;
+  }
+  &__header-price {
+    width: 264px;
+  }
+
+  &__item {
+    display: flex;
+    padding-top: 16px;
+    padding-bottom: 17px;
+    border-bottom: 1px solid #E2E2E2;
+    font-family: MPLUS-Regular, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+  }
+  &__item-wrapper {
+    display: flex;
+  }
+  &__date {
+    width: 148px;
+    padding-right: 20px;
+    font-size: 15px;
+    color: #919191;
+  }
+  &__name {
+    width: 429px;
+    padding-right: 20px;
+    font-family: MPLUS-Medium, sans-serif;
+  }
+  &__price {
+    width: 264px;
+    padding-right: 20px;
+  }
+  &__extend {
+    padding-right: 8px;
+    text-decoration: underline;
+    color: #41638A;
+  }
+  &__more {
+    width: 100%;
+    max-width: 400px;
+    height: 46px;
+    margin: 0 auto;
+    margin-top: 78px;
+    background: #F9FBFF;
+    border: 1px solid #CAE2FF;
+    box-sizing: border-box;
+    border-radius: 100px;
+    font-family: MPLUS-Medium, sans-serif;
+    font-size: 18px;
+    line-height: 44px;
+    color: #41638a;
+    text-align: center;
+  }
+}

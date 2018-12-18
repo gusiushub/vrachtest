@@ -1,0 +1,434 @@
+@media (max-width: 767px) {
+
+  .navigation {
+
+    .container {
+      padding: 0 5px;
+    }
+
+    &__links {
+      margin-bottom: 15px;
+    }
+    &__header{
+      margin-bottom: 15px;
+    }
+    &__tabs-item {
+      margin-right: 10px;
+    }
+    &__balance {
+      justify-content: flex-start;
+      width: 100%;
+      max-width: 420px;
+      margin-bottom: 15px;
+    }
+
+    &__plan {
+      justify-content: space-between;
+    }
+    &__history {
+      margin: 0;
+    }
+
+    &__links {
+      order: 2;
+      margin: 0 auto;
+      margin-bottom: 15px;
+    }
+    &__header {
+      text-align: center;
+    }
+    &__money {
+      display: none;
+
+      &--mobile {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 38px;
+      }
+    }
+
+    &__balance {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    &__add-money {
+      left: 0;
+      margin-left: 0;
+      margin-top: 5px;
+    }
+  }
+
+
+  .header {
+    height: 70px;
+
+    &__mobile-menu-wrapper {
+      display: flex;
+    }
+    &__location {
+      display: none;
+    }
+    &__burger {
+      display: none;
+    }
+    &__links {
+      display: none;
+    }
+    &__menu {
+      display: none;
+    }
+    &__login {
+      display: none;
+    }
+    &__account {
+      display: none;
+    }
+  }
+
+
+  .footer {
+    padding: 0 5px;
+    background: #41638A;
+    font-family: MPLUS-Medium, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    color: #ffffff;
+
+    &--big {
+      padding-top: 26px;
+    }
+
+    .container {
+      flex-wrap: wrap;
+      padding: 0;
+      padding-bottom: 40px;
+    }
+
+    &__logo {
+      width: 100%;
+      margin-bottom: 36px;
+    }
+    &__logo-img {
+      display: none;
+
+      &--mobile {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+    &__menu {
+
+    }
+    &__menu-item {
+      margin-bottom: 22px;
+    }
+    &__links {
+
+    }
+    &__links-item {
+      margin-bottom: 22px;
+    }
+    &__contacts {
+      margin-top: 17px;  //39-22
+    }
+    &__contacts-header {
+      font-size: 18px;
+      line-height: 27px;
+      margin-bottom: 12px;
+    }
+    &__contacts-item {
+      margin-bottom: 9px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+
+      svg {
+        display: none;
+
+        &:last-of-type {
+          display: inline-block;
+        }
+      }
+    }
+    &__info {
+      padding-top: 11px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      font-size: 14px;
+
+      .container {
+        padding: 0;
+      }
+
+      span {
+      }
+    }
+  }
+
+
+  .navigation {
+    &--photo {
+      .navigation__header {
+        display: none;
+      }
+    }
+
+    &__info {
+      margin-top: 32px;
+      margin-bottom: 34px;
+
+      &--full {
+        display: none;
+      }
+    }
+    &__info-wrapper {
+      display: block;
+    }
+    &__info-item {
+      margin-bottom: 4px;
+    }
+    &__change-rate {
+      margin-top: 11px;
+    }
+    &__change-img {
+      display: block;
+    }
+    &__photo {
+      display: none;
+
+      &--slider {
+        display: block;
+      }
+      .navigation__header {
+        display: block;
+        text-align: left;
+      }
+    }
+    &__photo-item {
+      margin-right: 15px;
+      opacity: 0.6;
+
+      &.slick-current {
+        opacity: 1;
+      }
+    }
+    &__for {
+      font-size: 14px;
+      line-height: 21px;
+    }
+  }
+
+  .popup-wrapper {
+    padding: 0 5px;
+  }
+  .popup {
+    width: 100%;
+    height: auto;
+  }
+
+    .popup__close {
+      top: -39px;
+      right: 0;
+    }
+    .popup__header {
+      margin-bottom: 13px;
+      font-size: 22px;
+      line-height: 33px;
+    }
+  .popup__wrapper {
+    flex-wrap: wrap;
+  }
+  .login {
+    max-width: 560px;
+    padding: 33px 10px 38px 10px;
+
+    &__info {
+      margin-bottom: 24px;
+      font-size: 15px;
+    }
+  }
+
+
+
+  .doctor {
+    &__more{
+      display: none;
+      &--mobile {
+        display: block;
+      }
+    }
+  }
+
+
+
+}
+@media (max-width: 767px) {
+
+  .header {
+    height: 70px;
+
+    &__mobile-menu-wrapper {
+      display: flex;
+    }
+    &__location {
+      display: none;
+    }
+    &__burger {
+      display: none;
+    }
+    &__links {
+      display: none;
+    }
+    &__menu {
+      display: none;
+    }
+    &__login {
+      display: none;
+    }
+    &__account {
+      display: none;
+    }
+  }
+
+
+  .footer {
+    padding: 0 5px;
+    background: #41638A;
+    font-family: MPLUS-Medium, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    color: #ffffff;
+
+    &--big {
+      padding-top: 26px;
+    }
+
+    .container {
+      flex-wrap: wrap;
+      padding: 0;
+      padding-bottom: 40px;
+    }
+
+    &__logo {
+      width: 100%;
+      margin-bottom: 36px;
+    }
+    &__logo-img {
+      display: none;
+
+      &--mobile {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+    &__menu {
+
+    }
+    &__menu-item {
+      margin-bottom: 22px;
+    }
+    &__links {
+
+    }
+    &__links-item {
+      margin-bottom: 22px;
+    }
+    &__contacts {
+      margin-top: 17px;  //39-22
+    }
+    &__contacts-header {
+      font-size: 18px;
+      line-height: 27px;
+      margin-bottom: 12px;
+    }
+    &__contacts-item {
+      margin-bottom: 9px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+
+      svg {
+        display: none;
+
+        &:last-of-type {
+          display: inline-block;
+        }
+      }
+    }
+    &__info {
+      padding-top: 11px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      font-size: 14px;
+
+      .container {
+        padding: 0;
+      }
+
+      span {
+      }
+    }
+  }
+
+}
+@media (min-width: 480px) and (max-width: 767px) {
+
+  .footer {
+
+    &__contacts {
+      margin-top: 0px;
+    }
+
+  }
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1240px) {
+
+  .navigation {
+
+    .container {
+      padding: 0 5px;
+    }
+  }
+
+
+  .header {
+    font-size: 15px;
+    line-height: 17px;
+
+    &__location {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    &__burger {
+      padding: 0 15px;
+    }
+    &__login {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    &__account {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+  }
+
+
+  .footer {
+    .container {
+      padding: 0 30px;
+      padding-bottom: 20px;
+      flex-wrap: wrap;
+    }
+  }
+
+}
+
+
+@media (min-width: 960px) {
+
+
+
+}

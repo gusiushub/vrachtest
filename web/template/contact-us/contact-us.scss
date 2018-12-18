@@ -1,0 +1,67 @@
+@import '../ui/variables.scss';
+
+
+.navigation {
+  padding-bottom: 18px;
+
+  &__header {
+    width: 100%;
+    margin-bottom: 17px;
+    padding-bottom: 27px;
+    border-bottom: 1px solid #E2E2E2;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  &__text {
+    flex-grow: 1;
+    max-width: 830px;
+    margin-right: 20px;
+    font-family: MPLUS-Medium, sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    color: #333333;
+  }
+  &__list {
+    font-family: MPLUS-Medium, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    color: #333333;
+  }
+  &__list-item {
+    margin-bottom: 6px;
+
+    svg {
+      margin-right: 6px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+
+.contact-us {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 820px;
+  padding-top: 69px;
+  padding-bottom: 126px;
+
+  .input {
+    margin-bottom: 35px;
+
+    &:first-of-type {
+      width: 100%;
+    }
+
+  }
+}

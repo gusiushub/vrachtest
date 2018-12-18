@@ -1,0 +1,450 @@
+@import '../ui/variables.scss';
+
+
+.popup-wrapper {
+  display: flex;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(10, 10, 42, 0.8);
+  overflow-y: scroll;
+
+  &--show {
+    display: flex;
+  }
+}
+
+
+
+.greeting {
+  position: relative;
+  margin: auto;
+  width: 85%;
+  max-width: 860px;
+  height: 460px;
+  background: url("../img/greeting-bg.png") bottom right no-repeat,#F6FAFF;
+  border-radius: 4px;
+
+  padding: 60px 60px 39px 60px;
+
+  &__close {
+    position: absolute;
+    top: 0;
+    right: -49px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  &__header {
+    margin-bottom: 30px;
+    font-family: MPLUS-Medium, sans-serif;
+    line-height: 26px;
+    font-size: 22px;
+    letter-spacing: 0.01em;
+    color: #333333;
+    text-align: left;
+    text-transform: none;
+  }
+  &__info {
+    margin-bottom: 30px;
+    font-family: MPLUS-Regular, sans-serif;
+    line-height: 24px;
+    font-size: 16px;
+    color: #333333;
+  }
+  &__respect {
+    font-family: MPLUS-Regular, sans-serif;
+    font-size: 13px;
+    line-height: 19px;
+    color: rgba(51, 51, 51, 0.7);
+
+    a {
+      display: block;
+      color: #41638A;
+    }
+  }
+  .button {
+    width: 350px;
+    margin-bottom: 40px;
+  }
+}
+
+
+
+.thanks {
+  position: relative;
+  margin: auto;
+  width: 85%;
+  max-width: 860px;
+  min-height: 460px;
+  background: url("../img/greeting-bg.png") bottom right no-repeat,#F6FAFF;
+  border-radius: 4px;
+
+  padding: 60px 60px 39px 60px;
+
+  &__close {
+    position: absolute;
+    top: 0;
+    right: -49px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  &__header {
+    margin-bottom: 20px;
+    font-family: MPLUS-Medium, sans-serif;
+    line-height: 26px;
+    font-size: 22px;
+    letter-spacing: 0.01em;
+    color: #333333;
+    text-align: left;
+    text-transform: none;
+  }
+  &__info {
+    margin-bottom: 20px;
+    font-family: MPLUS-Regular, sans-serif;
+    line-height: 21px;
+    font-size: 16px;
+    color: #333333;
+
+    a {
+      display: block;
+      color: #41638A;
+
+      &:last-of-type {
+        margin-bottom: 24px;
+      }
+    }
+  }
+  &__respect {
+    font-family: MPLUS-Regular, sans-serif;
+    font-size: 13px;
+    line-height: 19px;
+    color: rgba(51, 51, 51, 0.7);
+
+    a {
+      display: block;
+      color: #41638A;
+    }
+  }
+  .button {
+    width: 350px;
+    margin-bottom: 30px;
+  }
+}
+
+
+
+
+.birthday {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+  margin: auto;
+  width: 85%;
+  max-width: 860px;
+  min-height: 460px;
+  //background: url("../img/birthday-bg.png") center left no-repeat, radial-gradient(120.00px at 38.26% 53.13%, #3F77A3 0%, rgba(63, 119, 163, 0) 100%), #81D5F1;
+  background: linear-gradient(180deg, #81D5F1 0%, #90DCF3 89.41%), #81D5F1;
+  border-radius: 4px;
+
+  padding: 75px 92px 70px 0px;
+
+  &__close {
+    position: absolute;
+    top: 0;
+    right: -49px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  &__img {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 0;
+
+    &--small {
+      display: none;
+    }
+  }
+  &__header {
+    width: 40%;
+    margin-bottom: 20px;
+    font-family: Vesna, sans-serif;
+    line-height: 34px;
+    font-size: 32px;
+    color: #333333;
+    text-align: left;
+    text-transform: none;
+    z-index: 1;
+  }
+  &__info {
+    width: 40%;
+    margin-bottom: 61px;
+    font-family: MPLUS-Regular, sans-serif;
+    line-height: 27px;
+    font-size: 18px;
+    color: #333333;
+    z-index: 1;
+  }
+  &__respect {
+    width: 40%;
+    font-family: MPLUS-Regular, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    color: rgba(51, 51, 51, 0.7);
+    z-index: 1;
+
+    a {
+      display: block;
+      color: #41638A;
+    }
+  }
+}
+
+
+
+
+.christmas {
+  position: relative;
+  margin: auto;
+  width: 85%;
+  max-width: 860px;
+  min-height: 460px;
+  //background: url("../img/birthday-bg.png") center left no-repeat, radial-gradient(120.00px at 38.26% 53.13%, #3F77A3 0%, rgba(63, 119, 163, 0) 100%), #81D5F1;
+  //background: linear-gradient(180deg, #81D5F1 0%, #90DCF3 89.41%), #81D5F1;
+  border-radius: 4px;
+  //overflow: hidden;
+
+  padding: 60px 60px 50px 70px;
+
+  &__close {
+    position: absolute;
+    top: 0;
+    right: -49px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  &__img-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+  }
+  &__img {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    //z-index: -1;
+    //border-radius: 4px;
+
+    &--small {
+      display: none;
+    }
+  }
+  &__header {
+    margin-bottom: 20px;
+    font-family: Vesna, sans-serif;
+    line-height: 34px;
+    font-size: 32px;
+    color: #333333;
+    text-align: left;
+    text-transform: none;
+    z-index: 1;
+  }
+  &__info {
+    margin-bottom: 84px;
+    font-family: MPLUS-Regular, sans-serif;
+    line-height: 27px;
+    font-size: 18px;
+    color: #333333;
+    z-index: 1;
+  }
+  &__respect {
+    font-family: MPLUS-Regular, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    color: rgba(51, 51, 51, 0.7);
+    z-index: 1;
+
+    a {
+      display: block;
+      color: #41638A;
+    }
+  }
+}
+
+
+
+
+.victory {
+  position: relative;
+  margin: auto;
+  width: 85%;
+  max-width: 860px;
+  min-height: 460px;
+  //background: url("../img/birthday-bg.png") center left no-repeat, radial-gradient(120.00px at 38.26% 53.13%, #3F77A3 0%, rgba(63, 119, 163, 0) 100%), #81D5F1;
+  //background: linear-gradient(180deg, #81D5F1 0%, #90DCF3 89.41%), #81D5F1;
+  border-radius: 4px;
+  //overflow: hidden;
+
+  padding: 60px 60px 50px 70px;
+
+  &__close {
+    position: absolute;
+    top: 0;
+    right: -49px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  &__img-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+  }
+  &__img {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    //z-index: -1;
+    //border-radius: 4px;
+
+    &--small {
+      display: none;
+    }
+  }
+  &__header {
+    margin-bottom: 20px;
+    font-family: Vesna, sans-serif;
+    line-height: 34px;
+    font-size: 32px;
+    color: #333333;
+    text-align: left;
+    text-transform: none;
+    z-index: 1;
+  }
+  &__info {
+    margin-bottom: 84px;
+    font-family: MPLUS-Regular, sans-serif;
+    line-height: 27px;
+    font-size: 18px;
+    color: #333333;
+    z-index: 1;
+  }
+  &__respect {
+    font-family: MPLUS-Regular, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    color: rgba(51, 51, 51, 0.7);
+    z-index: 1;
+
+    a {
+      display: block;
+      color: #41638A;
+    }
+  }
+}
+
+
+
+
+.women {
+  position: relative;
+  margin: auto;
+  width: 85%;
+  max-width: 860px;
+  min-height: 460px;
+  //background: url("../img/birthday-bg.png") center left no-repeat, radial-gradient(120.00px at 38.26% 53.13%, #3F77A3 0%, rgba(63, 119, 163, 0) 100%), #81D5F1;
+  //background: linear-gradient(180deg, #81D5F1 0%, #90DCF3 89.41%), #81D5F1;
+  border-radius: 4px;
+  //overflow: hidden;
+
+  padding: 60px 60px 50px 70px;
+
+  &__close {
+    position: absolute;
+    top: 0;
+    right: -49px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  &__img-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background: #FEEFED;
+  }
+  &__img {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    //z-index: -1;
+    //border-radius: 4px;
+
+    &--small {
+      display: none;
+    }
+  }
+  &__header {
+    margin-bottom: 20px;
+    font-family: Vesna, sans-serif;
+    line-height: 34px;
+    font-size: 32px;
+    text-align: left;
+    text-transform: none;
+    z-index: 1;
+    color: #F35E5E;
+  }
+  &__info {
+    margin-bottom: 32px;
+    font-family: MPLUS-Regular, sans-serif;
+    line-height: 27px;
+    font-size: 18px;
+    color: #333333;
+    z-index: 1;
+  }
+  &__respect {
+    font-family: MPLUS-Regular, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    color: rgba(51, 51, 51, 0.7);
+    z-index: 1;
+
+    a {
+      display: block;
+      color: #41638A;
+    }
+  }
+}

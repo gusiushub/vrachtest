@@ -12,6 +12,12 @@ $config = [
         '@npm'   => '@vendor/npm-asset',
     ],
     'components' => [
+
+        'geo' => [
+            'class' => 'div\geoip\Geo',
+            'cityClass' => 'app\models\City' // модель города
+        ],
+
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => 'o7dLrKL_tW8nY6-hZO1cXi0l_LEKAT10',

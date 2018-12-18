@@ -1,0 +1,82 @@
+@media (max-width: 767px) {
+
+  .subscription {
+    padding-top: 25px;
+    padding-bottom: 60px;
+
+    .container {
+      //padding: 0 5px;
+    }
+
+
+    &__header {
+      display: none;
+    }
+    &__header-date {
+      width: 148px;
+    }
+    &__header-name {
+      width: 429px;
+    }
+    &__header-price {
+      width: 264px;
+    }
+
+    &__item {
+      flex-wrap: wrap;
+      padding-top: 24px;
+      padding-bottom: 27px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    &__item-wrapper {
+      display: flex;
+      width: 100%;
+
+      &:last-child {
+        margin-top: 12px;
+      }
+    }
+    &__date {
+      min-width: 100px;
+      padding-right: 0px;
+    }
+    &__name {
+      padding-right: 0px;
+    }
+    &__price {
+      padding-right: 0px;
+    }
+    &__extend {
+      //width: 148px;
+      min-width: 100px;
+      order: -1;
+      padding-right: 0px;
+    }
+    &__more {
+
+    }
+  }
+
+
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+
+
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1240px) {
+
+
+
+}
+
+
+@media (min-width: 960px) {
+
+
+
+}

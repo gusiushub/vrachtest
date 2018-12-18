@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Личный кабинет. Анкета</title>
+    <link rel="stylesheet" type="text/css" href="../slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="../slick/slick-theme.css"/>
+    <link rel="stylesheet" href="../css/ui.css">
+    <link rel="stylesheet" href="../css/ui-responsive.css">
+    <link rel="stylesheet" href="../css/account-questionnaire.css">
+    <link rel="stylesheet" href="../css/account-questionnaire-responsive.css">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header__logo">
+            <img src="../img/logo_header--white.png" alt="" class="header__logo-img">
+        </div>
+
+
+        <div class="header__mobile-menu-wrapper">
+            <div class="header__mobile-burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="header__mobile-menu">
+                <div class="header__account">
+                    <span>Личный кабинет</span>
+                    <div class="header__account-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="40"
+                                  height="40">
+                                <rect width="40" height="40" rx="20" fill="white"/>
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <g filter="url(#filter0_d)">
+                                    <rect width="40" height="40" rx="20" fill="white"/>
+                                </g>
+                                <path d="M19.9998 19.7373C22.631 19.7373 24.7642 17.1098 24.7642 13.8687C24.7642 10.6274 24.0639 8 19.9998 8C15.9358 8 15.2354 10.6274 15.2354 13.8687C15.2354 17.1098 17.3685 19.7373 19.9998 19.7373Z"
+                                      fill="#EDEDED"/>
+                                <path d="M28.9884 28.4609C28.9178 23.9438 28.4383 22.0108 25.4001 20.8968C23.7385 20.2876 21.7697 21.1997 19.9999 21.1997C18.2301 21.1997 16.2611 20.2876 14.5995 20.8969C11.6029 21.9957 11.0956 23.8913 11.0146 28.2775C11.0063 28.7264 11.0025 28.75 11.001 28.6979C11.0023 29.0882 11.0919 29.4768 11.3671 29.7536C12.1359 30.5271 14.3423 31.9993 19.9999 31.9993C25.9434 31.9993 28.0781 30.3745 28.7386 29.642C28.9319 29.4275 28.9979 29.141 28.9985 28.8523C28.997 28.8845 28.994 28.8221 28.9884 28.4609Z"
+                                      fill="#EDEDED"/>
+                            </g>
+                            <defs>
+                                <filter id="filter0_d" x="-6" y="-4" width="52" height="52" filterUnits="userSpaceOnUse"
+                                        color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feColorMatrix in="SourceAlpha" type="matrix"
+                                                   values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+                                    <feOffset dy="2"/>
+                                    <feGaussianBlur stdDeviation="3"/>
+                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                                </filter>
+                            </defs>
+                        </svg>
+                    </div>
+
+                    <div class="header__account-menu">
+                        <div class="header__account-item">Редактировать профиль</div>
+                        <div class="header__account-item">Настройки</div>
+                        <div class="header__account-item">Избранное</div>
+                        <div class="header__account-item">Мои вакансии</div>
+                        <div class="header__account-item">Выйти</div>
+                    </div>
+                </div>
+                <div class="header__location">
+                    <div class="header__location-head">
+                        <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.82799 1.09855C5.26564 -0.366182 2.73451 -0.366182 1.17176 1.09855C-0.390588 2.56252 -0.390588 4.93774 1.17176 6.40134C1.17176 6.40134 3.99807 9.00005 3.99807 12C3.99807 9.00005 6.82759 6.40134 6.82759 6.40134C8.39074 4.93811 8.39074 2.56252 6.82799 1.09855ZM3.99847 5.25198C3.1157 5.25198 2.40013 4.58112 2.40013 3.752C2.40013 2.92289 3.1157 2.25203 3.99847 2.25203C4.88445 2.25203 5.60002 2.92289 5.60002 3.752C5.60002 4.58112 4.88445 5.25198 3.99847 5.25198Z"
+                                  fill="#243C57"/>
+                        </svg>
+                        Ваш город:
+                    </div>
+                    <div class="header__city">
+                        Санкт-Петербург
+                    </div>
+                </div>
+                <div class="header__login">
+                    Вход / Регистрация
+                    <div class="header__login-icon">
+                        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.73242 31.3438H4.03038C3.46341 31.3438 3.12135 31.0273 2.96795 30.8387C2.70312 30.5129 2.60052 30.0889 2.68665 29.6753C4.06585 23.0505 9.91226 18.2125 16.6615 18.0555C16.774 18.0597 16.8867 18.0625 17 18.0625C17.1144 18.0625 17.2281 18.0596 17.3415 18.0554C18.9919 18.093 20.604 18.4034 22.1384 18.9796C22.825 19.2376 23.5908 18.8898 23.8486 18.2031C24.1065 17.5164 23.7589 16.7507 23.0721 16.4929C22.8523 16.4102 22.6309 16.3329 22.4084 16.2596C24.6065 14.6108 26.0313 11.9843 26.0313 9.03125C26.0313 4.05145 21.9799 0 17 0C12.0201 0 7.96875 4.05145 7.96875 9.03125C7.96875 11.9869 9.39595 14.6155 11.5974 16.2641C9.58056 16.928 7.68798 17.9605 6.03167 19.3229C2.99478 21.8209 0.883254 25.3052 0.0861781 29.1339C-0.163643 30.3336 0.135584 31.5659 0.90716 32.5146C1.67482 33.4586 2.81322 34 4.03038 34H8.73242C9.46595 34 10.0605 33.4054 10.0605 32.6719C10.0605 31.9384 9.46595 31.3438 8.73242 31.3438ZM10.625 9.03125C10.625 5.51604 13.4848 2.65625 17 2.65625C20.5152 2.65625 23.375 5.51604 23.375 9.03125C23.375 12.4423 20.682 15.2361 17.3104 15.3986C17.207 15.3968 17.1036 15.3952 17 15.3952C16.8962 15.3952 16.7924 15.3967 16.6886 15.3985C13.3175 15.2356 10.625 12.442 10.625 9.03125Z"
+                                  fill="#243C57"/>
+                            <path d="M32.9833 22.8841C32.4148 21.6124 31.1342 20.7884 29.7177 20.7852H25.5758C25.5728 20.7852 25.5701 20.7852 25.567 20.7852C24.0729 20.7852 22.7693 21.6657 22.2448 23.0302C22.175 23.2117 22.0896 23.4404 22.0006 23.707H13.3049C12.9459 23.707 12.6021 23.8524 12.352 24.11L10.0705 26.46C9.56804 26.9775 9.57057 27.8016 10.0762 28.316L12.4004 30.6809C12.6501 30.935 12.9914 31.0781 13.3476 31.0781H17.664C18.3976 31.0781 18.9922 30.4835 18.9922 29.7499C18.9922 29.0164 18.3976 28.4218 17.664 28.4218H13.9045L12.88 27.3794L13.8666 26.3633H22.9969C23.6087 26.3633 24.1414 25.9453 24.2869 25.351C24.3943 24.9122 24.5291 24.4904 24.7241 23.9833C24.8527 23.6489 25.1755 23.4414 25.5702 23.4414C25.571 23.4414 25.5719 23.4414 25.5728 23.4414H29.7146C30.0902 23.4423 30.4135 23.6441 30.5583 23.9681C30.9148 24.7658 31.3406 26.0007 31.3438 27.3539C31.3469 28.7172 30.9217 29.9804 30.5642 30.8C30.4201 31.1306 30.0941 31.3438 29.7301 31.3438C29.7294 31.3438 29.7287 31.3438 29.728 31.3438H25.5361C25.1686 31.3429 24.8244 31.1065 24.6797 30.7555C24.5244 30.3789 24.3897 29.949 24.2682 29.4409C24.0974 28.7275 23.3805 28.2877 22.6674 28.4583C21.954 28.6291 21.5142 29.3458 21.6849 30.0591C21.839 30.7032 22.0155 31.2623 22.2242 31.7683C22.7819 33.1206 24.0795 33.9965 25.533 33.9999H29.7249C29.7278 33.9999 29.7304 33.9999 29.7333 33.9999C31.1511 33.9999 32.4325 33.1612 32.9991 31.8616C33.4581 30.809 34.0043 29.1714 34 27.3476C33.9958 25.5288 33.4448 23.9164 32.9833 22.8841Z"
+                                  fill="#243C57"/>
+                            <path d="M28.6211 28.6875C29.3546 28.6875 29.9492 28.0929 29.9492 27.3594C29.9492 26.6259 29.3546 26.0312 28.6211 26.0312C27.8876 26.0312 27.293 26.6259 27.293 27.3594C27.293 28.0929 27.8876 28.6875 28.6211 28.6875Z"
+                                  fill="#243C57"/>
+                        </svg>
+
+                    </div>
+                </div>
+                <div class="header__mobile-links">
+                    <div class="header__mobile-item">Главная</div>
+                    <div class="header__mobile-item">Пациенту</div>
+                    <div class="header__mobile-item">Специалисту</div>
+                    <div class="header__mobile-item">Каталог специалистов</div>
+                    <div class="header__mobile-item">Вакансии</div>
+                    <div class="header__mobile-item">Статьи</div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="header__location">
+            <div class="header__location-head">
+                <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.82799 1.09855C5.26564 -0.366182 2.73451 -0.366182 1.17176 1.09855C-0.390588 2.56252 -0.390588 4.93774 1.17176 6.40134C1.17176 6.40134 3.99807 9.00005 3.99807 12C3.99807 9.00005 6.82759 6.40134 6.82759 6.40134C8.39074 4.93811 8.39074 2.56252 6.82799 1.09855ZM3.99847 5.25198C3.1157 5.25198 2.40013 4.58112 2.40013 3.752C2.40013 2.92289 3.1157 2.25203 3.99847 2.25203C4.88445 2.25203 5.60002 2.92289 5.60002 3.752C5.60002 4.58112 4.88445 5.25198 3.99847 5.25198Z"
+                          fill="#243C57"/>
+                </svg>
+                Ваш город:
+            </div>
+            <div class="header__city">
+                Санкт-Петербург
+            </div>
+        </div>
+        <div class="header__burger">
+            <svg width="30" height="23" viewBox="0 0 30 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect y="20" width="30" height="3" fill="white"/>
+                <rect y="10" width="30" height="3" fill="white"/>
+                <rect width="30" height="3" fill="white"/>
+            </svg>
+            <div class="header__menu-wrapper">
+                <div class="header__menu">
+                    <div class="header__menu-item">Главная</div>
+                    <div class="header__menu-item">Пациенту</div>
+                    <div class="header__menu-item">Специалисту</div>
+                </div>
+            </div>
+        </div>
+        <div class="header__links">
+            <div class="header__links-item">Каталог специалистов</div>
+            <div class="header__links-item">Вакансии</div>
+            <div class="header__links-item">Статьи</div>
+        </div>
+        <div class="header__login" style="display: none;">
+            Вход / Регистрация
+            <div class="header__login-icon">
+                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.73242 31.3438H4.03038C3.46341 31.3438 3.12135 31.0273 2.96795 30.8387C2.70312 30.5129 2.60052 30.0889 2.68665 29.6753C4.06585 23.0505 9.91226 18.2125 16.6615 18.0555C16.774 18.0597 16.8867 18.0625 17 18.0625C17.1144 18.0625 17.2281 18.0596 17.3415 18.0554C18.9919 18.093 20.604 18.4034 22.1384 18.9796C22.825 19.2376 23.5908 18.8898 23.8486 18.2031C24.1065 17.5164 23.7589 16.7507 23.0721 16.4929C22.8523 16.4102 22.6309 16.3329 22.4084 16.2596C24.6065 14.6108 26.0313 11.9843 26.0313 9.03125C26.0313 4.05145 21.9799 0 17 0C12.0201 0 7.96875 4.05145 7.96875 9.03125C7.96875 11.9869 9.39595 14.6155 11.5974 16.2641C9.58056 16.928 7.68798 17.9605 6.03167 19.3229C2.99478 21.8209 0.883254 25.3052 0.0861781 29.1339C-0.163643 30.3336 0.135584 31.5659 0.90716 32.5146C1.67482 33.4586 2.81322 34 4.03038 34H8.73242C9.46595 34 10.0605 33.4054 10.0605 32.6719C10.0605 31.9384 9.46595 31.3438 8.73242 31.3438ZM10.625 9.03125C10.625 5.51604 13.4848 2.65625 17 2.65625C20.5152 2.65625 23.375 5.51604 23.375 9.03125C23.375 12.4423 20.682 15.2361 17.3104 15.3986C17.207 15.3968 17.1036 15.3952 17 15.3952C16.8962 15.3952 16.7924 15.3967 16.6886 15.3985C13.3175 15.2356 10.625 12.442 10.625 9.03125Z"
+                          fill="#243C57"/>
+                    <path d="M32.9833 22.8841C32.4148 21.6124 31.1342 20.7884 29.7177 20.7852H25.5758C25.5728 20.7852 25.5701 20.7852 25.567 20.7852C24.0729 20.7852 22.7693 21.6657 22.2448 23.0302C22.175 23.2117 22.0896 23.4404 22.0006 23.707H13.3049C12.9459 23.707 12.6021 23.8524 12.352 24.11L10.0705 26.46C9.56804 26.9775 9.57057 27.8016 10.0762 28.316L12.4004 30.6809C12.6501 30.935 12.9914 31.0781 13.3476 31.0781H17.664C18.3976 31.0781 18.9922 30.4835 18.9922 29.7499C18.9922 29.0164 18.3976 28.4218 17.664 28.4218H13.9045L12.88 27.3794L13.8666 26.3633H22.9969C23.6087 26.3633 24.1414 25.9453 24.2869 25.351C24.3943 24.9122 24.5291 24.4904 24.7241 23.9833C24.8527 23.6489 25.1755 23.4414 25.5702 23.4414C25.571 23.4414 25.5719 23.4414 25.5728 23.4414H29.7146C30.0902 23.4423 30.4135 23.6441 30.5583 23.9681C30.9148 24.7658 31.3406 26.0007 31.3438 27.3539C31.3469 28.7172 30.9217 29.9804 30.5642 30.8C30.4201 31.1306 30.0941 31.3438 29.7301 31.3438C29.7294 31.3438 29.7287 31.3438 29.728 31.3438H25.5361C25.1686 31.3429 24.8244 31.1065 24.6797 30.7555C24.5244 30.3789 24.3897 29.949 24.2682 29.4409C24.0974 28.7275 23.3805 28.2877 22.6674 28.4583C21.954 28.6291 21.5142 29.3458 21.6849 30.0591C21.839 30.7032 22.0155 31.2623 22.2242 31.7683C22.7819 33.1206 24.0795 33.9965 25.533 33.9999H29.7249C29.7278 33.9999 29.7304 33.9999 29.7333 33.9999C31.1511 33.9999 32.4325 33.1612 32.9991 31.8616C33.4581 30.809 34.0043 29.1714 34 27.3476C33.9958 25.5288 33.4448 23.9164 32.9833 22.8841Z"
+                          fill="#243C57"/>
+                    <path d="M28.6211 28.6875C29.3546 28.6875 29.9492 28.0929 29.9492 27.3594C29.9492 26.6259 29.3546 26.0312 28.6211 26.0312C27.8876 26.0312 27.293 26.6259 27.293 27.3594C27.293 28.0929 27.8876 28.6875 28.6211 28.6875Z"
+                          fill="#243C57"/>
+                </svg>
+
+            </div>
+        </div>
+        <div class="header__account header__account--general">
+            <span>Личный кабинет</span>
+            <div class="header__account-icon">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="40" height="40">
+                        <rect width="40" height="40" rx="20" fill="white"/>
+                    </mask>
+                    <g mask="url(#mask0)">
+                        <g filter="url(#filter0_d)">
+                            <rect width="40" height="40" rx="20" fill="white"/>
+                        </g>
+                        <path d="M19.9998 19.7373C22.631 19.7373 24.7642 17.1098 24.7642 13.8687C24.7642 10.6274 24.0639 8 19.9998 8C15.9358 8 15.2354 10.6274 15.2354 13.8687C15.2354 17.1098 17.3685 19.7373 19.9998 19.7373Z"
+                              fill="#EDEDED"/>
+                        <path d="M28.9884 28.4609C28.9178 23.9438 28.4383 22.0108 25.4001 20.8968C23.7385 20.2876 21.7697 21.1997 19.9999 21.1997C18.2301 21.1997 16.2611 20.2876 14.5995 20.8969C11.6029 21.9957 11.0956 23.8913 11.0146 28.2775C11.0063 28.7264 11.0025 28.75 11.001 28.6979C11.0023 29.0882 11.0919 29.4768 11.3671 29.7536C12.1359 30.5271 14.3423 31.9993 19.9999 31.9993C25.9434 31.9993 28.0781 30.3745 28.7386 29.642C28.9319 29.4275 28.9979 29.141 28.9985 28.8523C28.997 28.8845 28.994 28.8221 28.9884 28.4609Z"
+                              fill="#EDEDED"/>
+                    </g>
+                    <defs>
+                        <filter id="filter0_d" x="-6" y="-4" width="52" height="52" filterUnits="userSpaceOnUse"
+                                color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                           values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+                            <feOffset dy="2"/>
+                            <feGaussianBlur stdDeviation="3"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                        </filter>
+                    </defs>
+                </svg>
+            </div>
+
+            <div class="header__account-menu">
+                <div class="header__account-item">Редактировать профиль</div>
+                <div class="header__account-item">Настройки</div>
+                <div class="header__account-item">Избранное</div>
+                <div class="header__account-item">Мои вакансии</div>
+                <div class="header__account-item">Выйти</div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="navigation navigation--photo">
+    <div class="container">
+        <div class="breadcrumbs">
+            <div class="breadcrumbs__item">Главная /</div>
+            <div class="breadcrumbs__item">Личный кабинет /</div>
+            <div class="breadcrumbs__item">Настройки</div>
+        </div>
+
+        <div class="navigation__links">
+            <div class="navigation__header">
+                Добро пожаловать, <span>Степанова Ольга Владимировна</span>
+            </div>
+            <div class="navigation__tabs">
+                <div class="navigation__tabs-item navigation__tabs-item--active">Настройки</div>
+                <div class="navigation__tabs-item">Мои вакансии</div>
+                <div class="navigation__tabs-item">Отклики</div>
+            </div>
+        </div>
+
+        <div class="navigation__info navigation__info--full">
+            <div class="navigation__header">
+                Добро пожаловать, <span>Степанова Ольга Владимировна</span>
+            </div>
+            <div class="navigation__info-wrapper">
+                <div class="navigation__info-item">
+                    <span>Ваш тариф: </span>“VIP”
+                </div>
+                <div class="navigation__info-item">
+                    <span>Дата окончания тарифа: </span>01.06.2018
+                </div>
+                <a href="#" class="navigation__change-rate">Сменить тариф</a>
+            </div>
+        </div>
+
+        <div class="navigation__money">
+            <div class="navigation__balance">
+                <div class="navigation__current-money">Ваш баланс: <span>1500 руб.</span></div>
+                <a href="#" class="navigation__add-money">Пополнить баланс</a>
+            </div>
+            <div class="navigation__plan">
+                <div class="navigation__history">
+                    <svg class="navigation__plan-icon" width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.31066 5.81234H6.39114C6.78793 5.81234 7.10994 5.55648 7.10994 5.23589V0.574915C7.10994 0.25586 6.79098 0 6.39114 0H5.31066C4.91387 0 4.59033 0.257402 4.59033 0.574915V5.23589C4.59033 5.55648 4.91387 5.81234 5.31066 5.81234Z" fill="#3D5C81"/>
+                        <path d="M16.607 5.81234H17.6859C18.0873 5.81234 18.4047 5.55648 18.4047 5.23589V0.574915C18.4047 0.25586 18.0873 0 17.6859 0H16.607C16.2102 0 15.8882 0.257402 15.8882 0.574915V5.23589C15.8897 5.55648 16.2102 5.81234 16.607 5.81234Z" fill="#3D5C81"/>
+                        <path d="M22.1301 2.22461H19.2671V5.79432C19.2671 6.59119 18.5575 7.24009 17.6846 7.24009H16.6056C15.7327 7.24009 15.0215 6.59119 15.0215 5.79432V2.22461H7.97087V5.79432C7.97087 6.59119 7.26123 7.24009 6.38677 7.24009H5.31086C4.44098 7.24009 3.72829 6.59119 3.72829 5.79432V2.22461H0.863778C0.387632 2.22461 0 2.61765 0 3.10008V23.1281C0 23.6105 0.387632 24.0005 0.52956 24.0005H21.8005C22.6093 24.0005 23 23.6105 23 23.1281V3.097C22.9985 2.61765 22.6078 2.22461 22.1301 2.22461ZM21.6662 22.0214C21.6662 22.8907 20.9245 22.8152 20.9245 22.8152H13.1703C13.1703 22.8152 17.9119 20.4153 21.6662 17.0075C21.6662 17.0075 21.6662 21.0165 21.6662 22.0214ZM21.8295 14.603C21.5044 15.8993 20.7856 17.4005 19.4747 16.4187C17.564 14.9899 15.6808 13.7769 15.4381 16.6499C15.2382 19.0698 10.8094 22.3605 9.84493 23.0479H1.43912C1.28804 23.0479 1.169 22.9262 1.169 22.7751V10.4291C1.169 10.2765 1.28956 10.1547 1.43912 10.1547H21.5594C21.7074 10.1547 21.831 10.2765 21.831 10.4291L21.8295 14.603Z" fill="#3D5C81"/>
+                        <path d="M7.95083 12.2852H4.59033V15.6776H7.95083V12.2852Z" fill="#3D5C81"/>
+                        <path d="M13.4756 12.2852H10.1182V15.6776H13.4756V12.2852Z" fill="#3D5C81"/>
+                        <path d="M7.95083 17.4316H4.59033V20.8241H7.95083V17.4316Z" fill="#3D5C81"/>
+                        <path d="M10.1182 20.8241H11.0903C11.7999 20.1521 12.8728 19.0408 13.4756 18.2778V17.4316H10.1182V20.8241Z" fill="#3D5C81"/>
+                        <path d="M15.4688 13.8851C15.8075 13.5506 16.215 13.4489 16.5813 13.4489C17.2726 13.4489 18.0341 13.8388 18.8262 14.3675V12.2852H15.4688V13.8851Z" fill="#3D5C81"/>
+                    </svg>
+                    История подписок
+                </div>
+                <div class="navigation__rate">
+                    <svg class="navigation__plan-icon" width="23" height="19" viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.9558 0H16.1859C15.0616 0 13.4913 0.653475 12.6962 1.45223L4.68468 9.50128C3.88968 10.3 3.88968 11.607 4.68468 12.4058L10.652 18.4009C11.447 19.1997 12.748 19.1997 13.543 18.4009L21.5545 10.352C22.3495 9.55324 23 7.97552 23 6.84594V2.05379C23 0.924205 22.0801 0 20.9558 0ZM18.2301 6.84594C17.1012 6.84594 16.1859 5.92646 16.1859 4.79215C16.1859 3.65788 17.1012 2.73836 18.2301 2.73836C19.3591 2.73836 20.2744 3.65788 20.2744 4.79215C20.2744 5.92646 19.3591 6.84594 18.2301 6.84594ZM1.67678 11.4376L8.96735 18.7622C8.19513 19.1721 7.21141 19.0519 6.56356 18.4009L0.596247 12.4058C-0.198749 11.607 -0.198749 10.3 0.596247 9.50128L8.60782 1.45223C9.40285 0.653475 10.9732 0 12.0975 0L1.67678 10.4694C1.41181 10.7357 1.41181 11.1713 1.67678 11.4376Z" fill="#3D5C81"/>
+                    </svg>
+                    Тарифы
+                </div>
+            </div>
+        </div>
+
+        <div class="navigation__money navigation__money--mobile">
+            <div class="navigation__money-head">
+                <span>Информация о тарифе</span>
+                <svg width="21" height="11" viewBox="0 0 21 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.7851 0.21256C20.4957 -0.0708535 20.0254 -0.0708535 19.7359 0.21256L10.5101 9.26409L1.26628 0.21256C0.976847 -0.0708535 0.506513 -0.0708535 0.217077 0.21256C-0.072359 0.495974 -0.072359 0.956522 0.217077 1.23994L9.96746 10.7874C10.1122 10.9291 10.2931 11 10.4921 11C10.673 11 10.8719 10.9291 11.0167 10.7874L20.767 1.23994C21.0746 0.956522 21.0746 0.495974 20.7851 0.21256Z" fill="#BABABA"/>
+                </svg>
+            </div>
+            <div class="navigation__balance">
+                <div class="navigation__current-money">Ваш баланс: <span>1500 руб.</span></div>
+                <a href="#" class="navigation__add-money">Пополнить баланс</a>
+            </div>
+            <div class="navigation__info">
+                <div class="navigation__info-item">
+                    <span>Ваш тариф: </span>“VIP”
+                </div>
+                <div class="navigation__info-item">
+                    <span>Дата окончания тарифа: </span>01.06.2018
+                </div>
+                <a href="#" class="navigation__change-rate">Сменить тариф</a>
+            </div>
+            <div class="navigation__plan">
+                <div class="navigation__history">
+                    <svg class="navigation__plan-icon" width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.31066 5.81234H6.39114C6.78793 5.81234 7.10994 5.55648 7.10994 5.23589V0.574915C7.10994 0.25586 6.79098 0 6.39114 0H5.31066C4.91387 0 4.59033 0.257402 4.59033 0.574915V5.23589C4.59033 5.55648 4.91387 5.81234 5.31066 5.81234Z" fill="#3D5C81"/>
+                        <path d="M16.607 5.81234H17.6859C18.0873 5.81234 18.4047 5.55648 18.4047 5.23589V0.574915C18.4047 0.25586 18.0873 0 17.6859 0H16.607C16.2102 0 15.8882 0.257402 15.8882 0.574915V5.23589C15.8897 5.55648 16.2102 5.81234 16.607 5.81234Z" fill="#3D5C81"/>
+                        <path d="M22.1301 2.22461H19.2671V5.79432C19.2671 6.59119 18.5575 7.24009 17.6846 7.24009H16.6056C15.7327 7.24009 15.0215 6.59119 15.0215 5.79432V2.22461H7.97087V5.79432C7.97087 6.59119 7.26123 7.24009 6.38677 7.24009H5.31086C4.44098 7.24009 3.72829 6.59119 3.72829 5.79432V2.22461H0.863778C0.387632 2.22461 0 2.61765 0 3.10008V23.1281C0 23.6105 0.387632 24.0005 0.52956 24.0005H21.8005C22.6093 24.0005 23 23.6105 23 23.1281V3.097C22.9985 2.61765 22.6078 2.22461 22.1301 2.22461ZM21.6662 22.0214C21.6662 22.8907 20.9245 22.8152 20.9245 22.8152H13.1703C13.1703 22.8152 17.9119 20.4153 21.6662 17.0075C21.6662 17.0075 21.6662 21.0165 21.6662 22.0214ZM21.8295 14.603C21.5044 15.8993 20.7856 17.4005 19.4747 16.4187C17.564 14.9899 15.6808 13.7769 15.4381 16.6499C15.2382 19.0698 10.8094 22.3605 9.84493 23.0479H1.43912C1.28804 23.0479 1.169 22.9262 1.169 22.7751V10.4291C1.169 10.2765 1.28956 10.1547 1.43912 10.1547H21.5594C21.7074 10.1547 21.831 10.2765 21.831 10.4291L21.8295 14.603Z" fill="#3D5C81"/>
+                        <path d="M7.95083 12.2852H4.59033V15.6776H7.95083V12.2852Z" fill="#3D5C81"/>
+                        <path d="M13.4756 12.2852H10.1182V15.6776H13.4756V12.2852Z" fill="#3D5C81"/>
+                        <path d="M7.95083 17.4316H4.59033V20.8241H7.95083V17.4316Z" fill="#3D5C81"/>
+                        <path d="M10.1182 20.8241H11.0903C11.7999 20.1521 12.8728 19.0408 13.4756 18.2778V17.4316H10.1182V20.8241Z" fill="#3D5C81"/>
+                        <path d="M15.4688 13.8851C15.8075 13.5506 16.215 13.4489 16.5813 13.4489C17.2726 13.4489 18.0341 13.8388 18.8262 14.3675V12.2852H15.4688V13.8851Z" fill="#3D5C81"/>
+                    </svg>
+                    История подписок
+                </div>
+                <div class="navigation__rate">
+                    <svg class="navigation__plan-icon" width="23" height="19" viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.9558 0H16.1859C15.0616 0 13.4913 0.653475 12.6962 1.45223L4.68468 9.50128C3.88968 10.3 3.88968 11.607 4.68468 12.4058L10.652 18.4009C11.447 19.1997 12.748 19.1997 13.543 18.4009L21.5545 10.352C22.3495 9.55324 23 7.97552 23 6.84594V2.05379C23 0.924205 22.0801 0 20.9558 0ZM18.2301 6.84594C17.1012 6.84594 16.1859 5.92646 16.1859 4.79215C16.1859 3.65788 17.1012 2.73836 18.2301 2.73836C19.3591 2.73836 20.2744 3.65788 20.2744 4.79215C20.2744 5.92646 19.3591 6.84594 18.2301 6.84594ZM1.67678 11.4376L8.96735 18.7622C8.19513 19.1721 7.21141 19.0519 6.56356 18.4009L0.596247 12.4058C-0.198749 11.607 -0.198749 10.3 0.596247 9.50128L8.60782 1.45223C9.40285 0.653475 10.9732 0 12.0975 0L1.67678 10.4694C1.41181 10.7357 1.41181 11.1713 1.67678 11.4376Z" fill="#3D5C81"/>
+                    </svg>
+                    Тарифы
+                </div>
+            </div>
+        </div>
+
+        <div class="navigation__photo">
+            <!--<div class="navigation__header">-->
+                <!--Добро пожаловать, <span>Степанова Ольга Владимировна</span>-->
+            <!--</div>-->
+            <div class="navigation__photo-item">
+                <div class="navigation__image">
+                    <img src="../img/doctor--190(2).png" alt="">
+                    <div class="navigation__change-img">Изменить фото</div>
+                </div>
+                <div class="navigation__for">
+                    Фото для публикации на<span>на сайте www.уколы-на-дом.рф</span>
+                </div>
+            </div>
+            <div class="navigation__photo-item">
+                <div class="navigation__image">
+                    <img src="../img/doctor--190(2).png" alt="">
+                    <div class="navigation__change-img">Изменить фото</div>
+                </div>
+                <div class="navigation__for">
+                    Фото для публикации на<span>на сайте www.уколы-на-дом.рф</span>
+                </div>
+            </div>
+            <div class="navigation__photo-item">
+                <div class="navigation__image">
+                    <div class="navigation__upload-img">Загрузить фото</div>
+                </div>
+                <div class="navigation__for">
+                    Фото для публикации на<span>на сайте www.уколы-на-дом.рф</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="navigation__photo navigation__photo--slider">
+            <div class="navigation__header">
+                Добро пожаловать, <span>Степанова Ольга Владимировна</span>
+            </div>
+            <div class="slick__wrapper">
+                <div class="slick__arrow slick__arrow--left">
+                    <svg width="27" height="51" viewBox="0 0 27 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M23.9565 0.527584C24.3043 0.175861 24.7391 0 25.2174 0C25.6957 0 26.1304 0.175861 26.4783 0.527584C27.1739 1.23103 27.1739 2.37414 26.4783 3.07759L4.30435 25.5L26.4783 47.9224C27.1739 48.6259 27.1739 49.769 26.4783 50.4724C25.7826 51.1759 24.6522 51.1759 23.9565 50.4724L0.52174 26.775C-0.173912 26.0716 -0.173912 24.9284 0.52174 24.225L23.9565 0.527584Z" fill="black" fill-opacity="0.25"/>
+                    </svg>
+                </div>
+                <div class="slick__arrow slick__arrow--right">
+                    <svg width="27" height="51" viewBox="0 0 27 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M23.9565 0.527584C24.3043 0.175861 24.7391 0 25.2174 0C25.6957 0 26.1304 0.175861 26.4783 0.527584C27.1739 1.23103 27.1739 2.37414 26.4783 3.07759L4.30435 25.5L26.4783 47.9224C27.1739 48.6259 27.1739 49.769 26.4783 50.4724C25.7826 51.1759 24.6522 51.1759 23.9565 50.4724L0.52174 26.775C-0.173912 26.0716 -0.173912 24.9284 0.52174 24.225L23.9565 0.527584Z" fill="black" fill-opacity="0.25"/>
+                    </svg>
+                </div>
+                <div class="slick__slider">
+                    <div class="navigation__photo-item">
+                        <div class="navigation__image">
+                            <img src="../img/doctor--190(2).png" alt="">
+                            <div class="navigation__change-img">Изменить фото</div>
+                        </div>
+                        <div class="navigation__for">
+                            Фото для публикации на<span>на сайте www.уколы-на-дом.рф</span>
+                        </div>
+                    </div>
+                    <div class="navigation__photo-item">
+                        <div class="navigation__image">
+                            <img src="../img/doctor--190(2).png" alt="">
+                            <div class="navigation__change-img">Изменить фото</div>
+                        </div>
+                        <div class="navigation__for">
+                            Фото для публикации на<span>на сайте www.уколы-на-дом.рф</span>
+                        </div>
+                    </div>
+                    <div class="navigation__photo-item">
+                        <div class="navigation__image">
+                            <div class="navigation__upload-img">Загрузить фото</div>
+                        </div>
+                        <div class="navigation__for">
+                            Фото для публикации на<span>на сайте www.уколы-на-дом.рф</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+
+<div class="form">
+    <div class="container">
+
+        <div class="form__head">
+            <span>Редактировать анкету</span>
+            <svg width="21" height="11" viewBox="0 0 21 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.7851 0.21256C20.4957 -0.0708535 20.0254 -0.0708535 19.7359 0.21256L10.5101 9.26409L1.26628 0.21256C0.976847 -0.0708535 0.506513 -0.0708535 0.217077 0.21256C-0.072359 0.495974 -0.072359 0.956522 0.217077 1.23994L9.96746 10.7874C10.1122 10.9291 10.2931 11 10.4921 11C10.673 11 10.8719 10.9291 11.0167 10.7874L20.767 1.23994C21.0746 0.956522 21.0746 0.495974 20.7851 0.21256Z" fill="#BABABA"/>
+            </svg>
+        </div>
+
+        <div class="form__item">
+            <input type="text" class="input" placeholder="Ваше фио">
+            <div class="select__new-caret select__new-caret--gender">
+                <select id="select-gender" class="input input--select input--gender" name="">
+                    <option value="Пол">Пол</option>
+                    <option value="Мужской">Мужской</option>
+                    <option value="Женский">Женский</option>
+                </select>
+            </div>
+            <input type="date" class="input input--date" placeholder="Дата рождения">
+        </div>
+
+        <div class="form__item">
+            <div class="select__new-caret select__new-caret--city">
+                <select id="select-city" class="input input--select input--city" name="">
+                    <option value="Город">Город</option>
+                    <option value="Киев">Киев</option>
+                    <option value="Одесса">Одесса</option>
+                    <option value="Москва">Москва</option>
+                    <option value="Санкт-Петербург">Санкт-Петербург</option>
+                </select>
+            </div>
+            <div class="select__new-caret select__new-caret--district">
+                <select id="select-district" class="input input--select input--city" name="">
+                    <option value="Город">Район</option>
+                    <option value="Киев">Киевский</option>
+                    <option value="Одесса">Приморский</option>
+                    <option value="Москва">Таирово</option>
+                    <option value="Санкт-Петербург">Котовского</option>
+                </select>
+            </div>
+            <div class="select__new-caret select__new-caret--metro">
+                <select id="select-metro" class="input input--select input--city" name="">
+                    <option value="Город">Метро</option>
+                    <option value="Киев">Вокзал</option>
+                    <option value="Одесса">Пересыпь</option>
+                    <option value="Москва">4-ая Фонтана</option>
+                    <option value="Санкт-Петербург">Вузовский</option>
+                </select>
+            </div>
+
+            <input id="street" type="text" class="input" placeholder="Улица">
+        </div>
+
+        <div class="form__item">
+            <input type="email" class="input" placeholder="Email">
+            <input type="tel" class="input" placeholder="Телефон">
+            <input type="text" class="input" placeholder="Адрес сайта (если есть)">
+            <input type="text" class="input" placeholder="Вконтакте">
+            <input type="text" class="input" placeholder="Facebook">
+            <input type="text" class="input" placeholder="Instagram">
+        </div>
+
+        <div class="form__item form__item--nowrap">
+            <div class="form__wrapper">
+                <div class="select__new-caret select__new-caret--city">
+                    <select id="select-city" class="input input--select input--city" name="">
+                        <option value="Город">Должность</option>
+                        <option value="Киев">Киев</option>
+                        <option value="Одесса">Одесса</option>
+                        <option value="Москва">Москва</option>
+                        <option value="Санкт-Петербург">Санкт-Петербург</option>
+                    </select>
+                </div>
+                <div class="select__new-caret select__new-caret--district">
+                    <select id="select-district" class="input input--select input--city" name="">
+                        <option value="Город">Профессия</option>
+                        <option value="Киев">Киевский</option>
+                        <option value="Одесса">Приморский</option>
+                        <option value="Москва">Таирово</option>
+                        <option value="Санкт-Петербург">Котовского</option>
+                    </select>
+                </div>
+
+
+                <div class="form__services-wrapper--mobile">
+                    <div class="select__new-caret select__new-caret--services">
+                        Открыть список
+                    </div>
+                    <div class="form__services-wrapper">
+                        <div class="form__services-item">
+                            <input id="russia" type="checkbox" class="input input--checkbox input--checkbox-round"
+                                   placeholder="Россия">
+                            <label for="russia" class="label label--checkbox label--checkbox-round">Россия</label>
+                        </div>
+                        <div class="form__services-item">
+                            <input id="russia" type="checkbox" class="input input--checkbox input--checkbox-round"
+                                   placeholder="Россия">
+                            <label for="russia" class="label label--checkbox label--checkbox-round">Россия</label>
+                        </div>
+                        <div class="form__services-item">
+                            <input id="russia" type="checkbox" class="input input--checkbox input--checkbox-round"
+                                   placeholder="Россия">
+                            <label for="russia" class="label label--checkbox label--checkbox-round">Россия</label>
+                        </div>
+                        <div class="form__services-item">
+                            <input id="russia" type="checkbox" class="input input--checkbox input--checkbox-round"
+                                   placeholder="Россия">
+                            <label for="russia" class="label label--checkbox label--checkbox-round">Россия</label>
+                        </div>
+                        <div class="form__services-item">
+                            <input id="russia" type="checkbox" class="input input--checkbox input--checkbox-round"
+                                   placeholder="Россия">
+                            <label for="russia" class="label label--checkbox label--checkbox-round">Россия</label>
+                        </div>
+                        <div class="form__services-item">
+                            <input id="russia" type="checkbox" class="input input--checkbox input--checkbox-round"
+                                   placeholder="Россия">
+                            <label for="russia" class="label label--checkbox label--checkbox-round">Россия</label>
+                        </div>
+                        <div class="form__services-item">
+                            <input id="russia" type="checkbox" class="input input--checkbox input--checkbox-round"
+                                   placeholder="Россия">
+                            <label for="russia" class="label label--checkbox label--checkbox-round">Россия</label>
+                        </div>
+                        <div class="form__services-item">
+                            <input id="russia" type="checkbox" class="input input--checkbox input--checkbox-round"
+                                   placeholder="Россия">
+                            <label for="russia" class="label label--checkbox label--checkbox-round">Россия</label>
+                        </div>
+                        <div class="form__services-item">
+                            <input id="russia" type="checkbox" class="input input--checkbox input--checkbox-round"
+                                   placeholder="Россия">
+                            <label for="russia" class="label label--checkbox label--checkbox-round">Россия</label>
+                        </div>
+                        <div class="form__services-item">
+                            <input id="russia" type="checkbox" class="input input--checkbox input--checkbox-round"
+                                   placeholder="Россия">
+                            <label for="russia" class="label label--checkbox label--checkbox-round">Россия</label>
+                        </div>
+                        <div class="form__services-item">
+                            <input id="russia" type="checkbox" class="input input--checkbox input--checkbox-round"
+                                   placeholder="Россия">
+                            <label for="russia" class="label label--checkbox label--checkbox-round">Россия</label>
+                        </div>
+                        <div class="form__services-item">
+                            <input id="russia" type="checkbox" class="input input--checkbox input--checkbox-round"
+                                   placeholder="Россия">
+                            <label for="russia" class="label label--checkbox label--checkbox-round">Россия</label>
+                        </div>
+                        <div class="form__services-item">
+                            <input id="russia" type="checkbox" class="input input--checkbox input--checkbox-round"
+                                   placeholder="Россия">
+                            <label for="russia" class="label label--checkbox label--checkbox-round">Россия</label>
+                        </div>
+                        <div class="form__services-item">
+                            <input id="russia" type="checkbox" class="input input--checkbox input--checkbox-round"
+                                   placeholder="Россия">
+                            <label for="russia" class="label label--checkbox label--checkbox-round">Россия</label>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="select__new-caret select__new-caret--metro">
+                    <select id="select-metro" class="input input--select input--city" name="">
+                        <option value="Город">Выезд на дом</option>
+                        <option value="Киев">Вокзал</option>
+                        <option value="Одесса">Пересыпь</option>
+                        <option value="Москва">4-ая Фонтана</option>
+                        <option value="Санкт-Петербург">Вузовский</option>
+                    </select>
+                </div>
+                <label for="" class="form__label">
+                    <input type="text" class="input input--ending" placeholder="Стоимость услуг">
+                    <span>руб./час</span>
+                </label>
+                <label for="" class="form__label">
+                    <input type="text" class="input input--ending" placeholder="Стаж">
+                    <span>лет</span>
+                </label>
+            </div>
+
+            <div class="form__wrapper form__wrapper--services">
+                <div class="form__services-header">Выберите услугу</div>
+                <div class="form__services">
+                    <div class="form__services-item">
+                        <input id="russia2" type="checkbox" class="input input--checkbox input--checkbox-round"
+                               placeholder="Россия">
+                        <label for="russia2" class="label label--checkbox label--checkbox-round">Россия</label>
+                    </div>
+                    <div class="form__services-item">
+                        <input id="russia" type="checkbox" class="input input--checkbox input--checkbox-round"
+                               placeholder="Россия">
+                        <label for="russia" class="label label--checkbox label--checkbox-round">Россия</label>
+                    </div>
+                    <div class="form__services-item">
+                        <input id="russia" type="checkbox" class="input input--checkbox input--checkbox-round"
+                               placeholder="Россия">
+                        <label for="russia" class="label label--checkbox label--checkbox-round">Россия</label>
+                    </div>
+                    <div class="form__services-item">
+                        <input id="russia" type="checkbox" class="input input--checkbox input--checkbox-round"
+                               placeholder="Россия">
+                        <label for="russia" class="label label--checkbox label--checkbox-round">Россия</label>
+                    </div>
+                    <div class="form__services-item">
+                        <input id="russia" type="checkbox" class="input input--checkbox input--checkbox-round"
+                               placeholder="Россия">
+                        <label for="russia" class="label label--checkbox label--checkbox-round">Россия</label>
+                    </div>
+                    <div class="form__services-item">
+                        <input id="russia" type="checkbox" class="input input--checkbox input--checkbox-round"
+                               placeholder="Россия">
+                        <label for="russia" class="label label--checkbox label--checkbox-round">Россия</label>
+                    </div>
+                    <div class="form__services-item">
+                        <input id="russia" type="checkbox" class="input input--checkbox input--checkbox-round"
+                               placeholder="Россия">
+                        <label for="russia" class="label label--checkbox label--checkbox-round">Россия</label>
+                    </div>
+                    <div class="form__services-item">
+                        <input id="russia" type="checkbox" class="input input--checkbox input--checkbox-round"
+                               placeholder="Россия">
+                        <label for="russia" class="label label--checkbox label--checkbox-round">Россия</label>
+                    </div>
+                    <div class="form__services-item">
+                        <input id="russia" type="checkbox" class="input input--checkbox input--checkbox-round"
+                               placeholder="Россия">
+                        <label for="russia" class="label label--checkbox label--checkbox-round">Россия</label>
+                    </div>
+                    <div class="form__services-item">
+                        <input id="russia" type="checkbox" class="input input--checkbox input--checkbox-round"
+                               placeholder="Россия">
+                        <label for="russia" class="label label--checkbox label--checkbox-round">Россия</label>
+                    </div>
+                    <div class="form__services-item">
+                        <input id="russia" type="checkbox" class="input input--checkbox input--checkbox-round"
+                               placeholder="Россия">
+                        <label for="russia" class="label label--checkbox label--checkbox-round">Россия</label>
+                    </div>
+                    <div class="form__services-item">
+                        <input id="russia" type="checkbox" class="input input--checkbox input--checkbox-round"
+                               placeholder="Россия">
+                        <label for="russia" class="label label--checkbox label--checkbox-round">Россия</label>
+                    </div>
+                    <div class="form__services-item">
+                        <input id="russia" type="checkbox" class="input input--checkbox input--checkbox-round"
+                               placeholder="Россия">
+                        <label for="russia" class="label label--checkbox label--checkbox-round">Россия</label>
+                    </div>
+                    <div class="form__services-item">
+                        <input id="russia" type="checkbox" class="input input--checkbox input--checkbox-round"
+                               placeholder="Россия">
+                        <label for="russia" class="label label--checkbox label--checkbox-round">Россия</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="form__item form__item--textarea form__item--border">
+
+            <div class="form__area">
+                <div class="form__area-header">
+                    <span>Описание для сайта медсестранадом.рф</span>
+                    <svg width="21" height="11" viewBox="0 0 21 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.7851 0.21256C20.4957 -0.0708535 20.0254 -0.0708535 19.7359 0.21256L10.5101 9.26409L1.26628 0.21256C0.976847 -0.0708535 0.506513 -0.0708535 0.217077 0.21256C-0.072359 0.495974 -0.072359 0.956522 0.217077 1.23994L9.96746 10.7874C10.1122 10.9291 10.2931 11 10.4921 11C10.673 11 10.8719 10.9291 11.0167 10.7874L20.767 1.23994C21.0746 0.956522 21.0746 0.495974 20.7851 0.21256Z" fill="#BABABA"/>
+                    </svg>
+                </div>
+                <textarea name="" id="" cols="30" rows="10" class="input form__textarea form__textarea--active" placeholder="О себе"></textarea>
+                <input id="add-cv" type="file" class="input input--file">
+                <label for="add-cv" class="form__file">
+                    <svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24.6733 9.46912C24.2392 9.04717 23.5375 9.04905 23.1058 9.47324L9.78247 22.5667C8.05393 24.2563 5.24652 24.2563 3.51476 22.5644C1.78429 20.8721 1.78429 18.128 3.51496 16.4363L17.2327 2.95736C18.3119 1.90256 20.0664 1.90256 21.1487 2.95964C22.2307 4.01724 22.2307 5.732 21.1484 6.7899L9.78455 17.8975C9.78382 17.8982 9.7832 17.899 9.78247 17.8998C9.34954 18.3206 8.64989 18.32 8.21784 17.8977C7.78507 17.4747 7.78507 16.7891 8.21784 16.3661L13.7031 11.0034C14.1359 10.5802 14.1358 9.89427 13.7029 9.47126C13.2701 9.04824 12.5683 9.04829 12.1355 9.47141L6.6503 14.834C5.35193 16.1031 5.35193 18.1606 6.65041 19.4298C7.94883 20.6989 10.0538 20.6989 11.3522 19.4298C11.3538 19.4283 11.3549 19.4267 11.3564 19.4253L22.7158 8.3219C24.6638 6.41787 24.6638 3.33122 22.7158 1.42719C20.7676 -0.475729 17.61 -0.475729 15.6632 1.42719L1.94545 14.9062C-0.648794 17.442 -0.648795 21.5577 1.94732 24.0965C4.54515 26.6345 8.75577 26.6345 11.352 24.0967L24.6775 11.0012C25.1092 10.577 25.1072 9.89107 24.6733 9.46912Z" fill="#41638A"/>
+                    </svg>
+                    Прикрепите дипломы и сертификаты
+                </label>
+            </div>
+            <div class="form__area">
+                <div class="form__area-header">
+                    <span>Описание для сайта уколы-на-дом.рф</span>
+                    <svg width="21" height="11" viewBox="0 0 21 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.7851 0.21256C20.4957 -0.0708535 20.0254 -0.0708535 19.7359 0.21256L10.5101 9.26409L1.26628 0.21256C0.976847 -0.0708535 0.506513 -0.0708535 0.217077 0.21256C-0.072359 0.495974 -0.072359 0.956522 0.217077 1.23994L9.96746 10.7874C10.1122 10.9291 10.2931 11 10.4921 11C10.673 11 10.8719 10.9291 11.0167 10.7874L20.767 1.23994C21.0746 0.956522 21.0746 0.495974 20.7851 0.21256Z" fill="#BABABA"/>
+                    </svg>
+                </div>
+                <textarea name="" id="" cols="30" rows="10" class="input form__textarea form__textarea--active" placeholder="О себе"></textarea>
+                <input id="add-cv" type="file" class="input input--file">
+                <label for="add-cv" class="form__file">
+                    <svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24.6733 9.46912C24.2392 9.04717 23.5375 9.04905 23.1058 9.47324L9.78247 22.5667C8.05393 24.2563 5.24652 24.2563 3.51476 22.5644C1.78429 20.8721 1.78429 18.128 3.51496 16.4363L17.2327 2.95736C18.3119 1.90256 20.0664 1.90256 21.1487 2.95964C22.2307 4.01724 22.2307 5.732 21.1484 6.7899L9.78455 17.8975C9.78382 17.8982 9.7832 17.899 9.78247 17.8998C9.34954 18.3206 8.64989 18.32 8.21784 17.8977C7.78507 17.4747 7.78507 16.7891 8.21784 16.3661L13.7031 11.0034C14.1359 10.5802 14.1358 9.89427 13.7029 9.47126C13.2701 9.04824 12.5683 9.04829 12.1355 9.47141L6.6503 14.834C5.35193 16.1031 5.35193 18.1606 6.65041 19.4298C7.94883 20.6989 10.0538 20.6989 11.3522 19.4298C11.3538 19.4283 11.3549 19.4267 11.3564 19.4253L22.7158 8.3219C24.6638 6.41787 24.6638 3.33122 22.7158 1.42719C20.7676 -0.475729 17.61 -0.475729 15.6632 1.42719L1.94545 14.9062C-0.648794 17.442 -0.648795 21.5577 1.94732 24.0965C4.54515 26.6345 8.75577 26.6345 11.352 24.0967L24.6775 11.0012C25.1092 10.577 25.1072 9.89107 24.6733 9.46912Z" fill="#41638A"/>
+                    </svg>
+                    Прикрепите дипломы и сертификаты
+                </label>
+            </div>
+            <div class="form__area">
+                <div class="form__area-header">
+                    <span>Описание для сайта капельницы-на-дом.рф</span>
+                    <svg width="21" height="11" viewBox="0 0 21 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.7851 0.21256C20.4957 -0.0708535 20.0254 -0.0708535 19.7359 0.21256L10.5101 9.26409L1.26628 0.21256C0.976847 -0.0708535 0.506513 -0.0708535 0.217077 0.21256C-0.072359 0.495974 -0.072359 0.956522 0.217077 1.23994L9.96746 10.7874C10.1122 10.9291 10.2931 11 10.4921 11C10.673 11 10.8719 10.9291 11.0167 10.7874L20.767 1.23994C21.0746 0.956522 21.0746 0.495974 20.7851 0.21256Z" fill="#BABABA"/>
+                    </svg>
+                </div>
+                <textarea name="" id="" cols="30" rows="10" class="input form__textarea form__textarea--active" placeholder="О себе"></textarea>
+                <input id="add-cv" type="file" class="input input--file">
+                <label for="add-cv" class="form__file">
+                    <svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24.6733 9.46912C24.2392 9.04717 23.5375 9.04905 23.1058 9.47324L9.78247 22.5667C8.05393 24.2563 5.24652 24.2563 3.51476 22.5644C1.78429 20.8721 1.78429 18.128 3.51496 16.4363L17.2327 2.95736C18.3119 1.90256 20.0664 1.90256 21.1487 2.95964C22.2307 4.01724 22.2307 5.732 21.1484 6.7899L9.78455 17.8975C9.78382 17.8982 9.7832 17.899 9.78247 17.8998C9.34954 18.3206 8.64989 18.32 8.21784 17.8977C7.78507 17.4747 7.78507 16.7891 8.21784 16.3661L13.7031 11.0034C14.1359 10.5802 14.1358 9.89427 13.7029 9.47126C13.2701 9.04824 12.5683 9.04829 12.1355 9.47141L6.6503 14.834C5.35193 16.1031 5.35193 18.1606 6.65041 19.4298C7.94883 20.6989 10.0538 20.6989 11.3522 19.4298C11.3538 19.4283 11.3549 19.4267 11.3564 19.4253L22.7158 8.3219C24.6638 6.41787 24.6638 3.33122 22.7158 1.42719C20.7676 -0.475729 17.61 -0.475729 15.6632 1.42719L1.94545 14.9062C-0.648794 17.442 -0.648795 21.5577 1.94732 24.0965C4.54515 26.6345 8.75577 26.6345 11.352 24.0967L24.6775 11.0012C25.1092 10.577 25.1072 9.89107 24.6733 9.46912Z" fill="#41638A"/>
+                    </svg>
+                    Прикрепите дипломы и сертификаты
+                </label>
+            </div>
+
+
+            <div class="form__areas-content">
+                <div class="form__areas-wrapper form__areas-wrapper--active">
+                    <textarea name="" id="" cols="30" rows="10" class="input form__textarea form__textarea" placeholder="О себе"></textarea>
+                    <input id="add-cv" type="file" class="input input--file">
+                    <label for="add-cv" class="form__file">
+                        <svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24.6733 9.46912C24.2392 9.04717 23.5375 9.04905 23.1058 9.47324L9.78247 22.5667C8.05393 24.2563 5.24652 24.2563 3.51476 22.5644C1.78429 20.8721 1.78429 18.128 3.51496 16.4363L17.2327 2.95736C18.3119 1.90256 20.0664 1.90256 21.1487 2.95964C22.2307 4.01724 22.2307 5.732 21.1484 6.7899L9.78455 17.8975C9.78382 17.8982 9.7832 17.899 9.78247 17.8998C9.34954 18.3206 8.64989 18.32 8.21784 17.8977C7.78507 17.4747 7.78507 16.7891 8.21784 16.3661L13.7031 11.0034C14.1359 10.5802 14.1358 9.89427 13.7029 9.47126C13.2701 9.04824 12.5683 9.04829 12.1355 9.47141L6.6503 14.834C5.35193 16.1031 5.35193 18.1606 6.65041 19.4298C7.94883 20.6989 10.0538 20.6989 11.3522 19.4298C11.3538 19.4283 11.3549 19.4267 11.3564 19.4253L22.7158 8.3219C24.6638 6.41787 24.6638 3.33122 22.7158 1.42719C20.7676 -0.475729 17.61 -0.475729 15.6632 1.42719L1.94545 14.9062C-0.648794 17.442 -0.648795 21.5577 1.94732 24.0965C4.54515 26.6345 8.75577 26.6345 11.352 24.0967L24.6775 11.0012C25.1092 10.577 25.1072 9.89107 24.6733 9.46912Z" fill="#41638A"/>
+                        </svg>
+                        Прикрепите дипломы и сертификаты
+                    </label>
+                </div>
+                <div class="form__areas-wrapper">
+                    <textarea name="" id="" cols="30" rows="10" class="input form__textarea"  placeholder="О себе"></textarea>
+                    <input id="add-cv" type="file" class="input input--file">
+                    <label for="add-cv" class="form__file">
+                        <svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24.6733 9.46912C24.2392 9.04717 23.5375 9.04905 23.1058 9.47324L9.78247 22.5667C8.05393 24.2563 5.24652 24.2563 3.51476 22.5644C1.78429 20.8721 1.78429 18.128 3.51496 16.4363L17.2327 2.95736C18.3119 1.90256 20.0664 1.90256 21.1487 2.95964C22.2307 4.01724 22.2307 5.732 21.1484 6.7899L9.78455 17.8975C9.78382 17.8982 9.7832 17.899 9.78247 17.8998C9.34954 18.3206 8.64989 18.32 8.21784 17.8977C7.78507 17.4747 7.78507 16.7891 8.21784 16.3661L13.7031 11.0034C14.1359 10.5802 14.1358 9.89427 13.7029 9.47126C13.2701 9.04824 12.5683 9.04829 12.1355 9.47141L6.6503 14.834C5.35193 16.1031 5.35193 18.1606 6.65041 19.4298C7.94883 20.6989 10.0538 20.6989 11.3522 19.4298C11.3538 19.4283 11.3549 19.4267 11.3564 19.4253L22.7158 8.3219C24.6638 6.41787 24.6638 3.33122 22.7158 1.42719C20.7676 -0.475729 17.61 -0.475729 15.6632 1.42719L1.94545 14.9062C-0.648794 17.442 -0.648795 21.5577 1.94732 24.0965C4.54515 26.6345 8.75577 26.6345 11.352 24.0967L24.6775 11.0012C25.1092 10.577 25.1072 9.89107 24.6733 9.46912Z" fill="#41638A"/>
+                        </svg>
+                        Прикрепите дипломы и сертификаты
+                    </label>
+                </div>
+                <div class="form__areas-wrapper">
+                    <textarea name="" id="" cols="30" rows="10" class="input form__textarea"  placeholder="О себе"></textarea>
+                    <input id="add-cv" type="file" class="input input--file">
+                    <label for="add-cv" class="form__file">
+                        <svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24.6733 9.46912C24.2392 9.04717 23.5375 9.04905 23.1058 9.47324L9.78247 22.5667C8.05393 24.2563 5.24652 24.2563 3.51476 22.5644C1.78429 20.8721 1.78429 18.128 3.51496 16.4363L17.2327 2.95736C18.3119 1.90256 20.0664 1.90256 21.1487 2.95964C22.2307 4.01724 22.2307 5.732 21.1484 6.7899L9.78455 17.8975C9.78382 17.8982 9.7832 17.899 9.78247 17.8998C9.34954 18.3206 8.64989 18.32 8.21784 17.8977C7.78507 17.4747 7.78507 16.7891 8.21784 16.3661L13.7031 11.0034C14.1359 10.5802 14.1358 9.89427 13.7029 9.47126C13.2701 9.04824 12.5683 9.04829 12.1355 9.47141L6.6503 14.834C5.35193 16.1031 5.35193 18.1606 6.65041 19.4298C7.94883 20.6989 10.0538 20.6989 11.3522 19.4298C11.3538 19.4283 11.3549 19.4267 11.3564 19.4253L22.7158 8.3219C24.6638 6.41787 24.6638 3.33122 22.7158 1.42719C20.7676 -0.475729 17.61 -0.475729 15.6632 1.42719L1.94545 14.9062C-0.648794 17.442 -0.648795 21.5577 1.94732 24.0965C4.54515 26.6345 8.75577 26.6345 11.352 24.0967L24.6775 11.0012C25.1092 10.577 25.1072 9.89107 24.6733 9.46912Z" fill="#41638A"/>
+                        </svg>
+                        Прикрепите дипломы и сертификаты
+                    </label>
+                </div>
+            </div>
+            <div class="form__areas-tabs">
+                <div class="form__area-tab form__area-tab--active">Описание для сайта медсестранадом.рф</div>
+                <div class="form__area-tab">Описание для сайта уколы-на-дом.рф</div>
+                <div class="form__area-tab">Описание для сайта капельницы-на-дом.рф</div>
+            </div>
+        </div>
+
+
+        <div class="form__item form__item--submit form__item--border">
+
+            <div class="form__publish">
+                <div class="form__services-item">
+                    <input id="publish-cv" type="checkbox" class="input input--checkbox input--checkbox-round"
+                           placeholder="Разместить резюме">
+                    <label for="publish-cv" class="label label--checkbox label--checkbox-round">Разместить резюме</label>
+                </div>
+                <div class="form__services-item">
+                    <input id="publish-questionnaire" type="checkbox" class="input input--checkbox input--checkbox-round"
+                           placeholder="Разместить анкету в каталоге">
+                    <label for="publish-questionnaire" class="label label--checkbox label--checkbox-round">Разместить анкету в каталоге</label>
+                </div>
+            </div>
+
+            <button class="button button--save">Сохранить</button>
+
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer footer--big">
+    <div class="container">
+        <div class="footer__logo">
+            <img src="../img/logo_footer--grey.png" alt="" class="footer__logo-img">
+            <img src="../img/logo_footer--mobile.png" alt="" class="footer__logo-img footer__logo-img--mobile">
+        </div>
+        <div class="footer__menu">
+            <div class="footer__menu-item">Главная</div>
+            <div class="footer__menu-item">Пациенту</div>
+            <div class="footer__menu-item">Специалисту</div>
+        </div>
+        <div class="footer__links">
+            <div class="footer__links-item">Каталог специалистов</div>
+            <div class="footer__links-item">Вакансии</div>
+            <div class="footer__links-item">Статьи</div>
+        </div>
+        <div class="footer__contacts">
+            <div class="footer__contacts-header">Контакты</div>
+            <div class="footer__contacts-item footer__contacts-item--phone">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 0C4.47757 0 0 4.47755 0 10C0 15.5224 4.47757 20 10 20C15.5225 20 20 15.5223 20 10C20 4.47755 15.5225 0 10 0ZM15.2807 14.5911L14.48 15.392C14.3371 15.5347 13.9185 15.6238 13.9051 15.6238C11.3721 15.6459 8.93316 14.6509 7.1412 12.8588C5.34433 11.0609 4.34822 8.61331 4.37497 6.07178C4.37497 6.07062 4.46664 5.66404 4.60947 5.52258L5.41011 4.72181C5.7031 4.42747 6.26591 4.29445 6.66017 4.42635L6.82859 4.48254C7.2217 4.61431 7.63443 5.04897 7.74304 5.44941L8.14579 6.92761C8.25441 7.32921 8.10791 7.90055 7.81501 8.19353L7.28039 8.72823C7.80528 10.6714 9.32994 12.1963 11.2734 12.7225L11.8078 12.1877C12.1022 11.8933 12.6733 11.7469 13.074 11.8554L14.552 12.2596C14.9526 12.3696 15.3872 12.7798 15.5189 13.1728L15.5751 13.3436C15.7057 13.7368 15.5737 14.2994 15.2807 14.5911Z"
+                          fill="#41638A"/>
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 0C4.47757 0 0 4.47755 0 10C0 15.5224 4.47757 20 10 20C15.5225 20 20 15.5223 20 10C20 4.47755 15.5225 0 10 0ZM15.2807 14.5911L14.48 15.392C14.3371 15.5347 13.9185 15.6238 13.9051 15.6238C11.3721 15.6459 8.93316 14.6509 7.1412 12.8588C5.34433 11.0609 4.34822 8.61331 4.37497 6.07178C4.37497 6.07062 4.46664 5.66404 4.60947 5.52258L5.41011 4.72181C5.7031 4.42747 6.26591 4.29445 6.66017 4.42635L6.82859 4.48254C7.2217 4.61431 7.63443 5.04897 7.74304 5.44941L8.14579 6.92761C8.25441 7.32921 8.10791 7.90055 7.81501 8.19353L7.28039 8.72823C7.80528 10.6714 9.32994 12.1963 11.2734 12.7225L11.8078 12.1877C12.1022 11.8933 12.6733 11.7469 13.074 11.8554L14.552 12.2596C14.9526 12.3696 15.3872 12.7798 15.5189 13.1728L15.5751 13.3436C15.7057 13.7368 15.5737 14.2994 15.2807 14.5911Z" fill="white"/>
+                </svg>
+                +7 (812) 234-56-78
+            </div>
+            <div class="footer__contacts-item footer__contacts-item--email">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.99983 0C4.47714 0 0 4.47724 0 9.9999C0 15.5224 4.47714 20 9.99983 20C15.5225 20 20 15.5224 20 9.9999C20 4.47724 15.5225 0 9.99983 0ZM10 3.51244L15.9177 7.20247H4.0824L10 3.51244ZM15.9914 13.095H15.9908C15.9908 13.6869 15.5111 14.1665 14.9193 14.1665H5.08075C4.48887 14.1665 4.00927 13.6868 4.00927 13.095V7.43727C4.00927 7.37467 4.01567 7.31381 4.02607 7.25401L9.68003 10.7796C9.68696 10.7839 9.69436 10.7868 9.70149 10.7908C9.70896 10.795 9.71656 10.799 9.72416 10.8028C9.7641 10.8234 9.80523 10.84 9.8473 10.8508C9.85163 10.852 9.85596 10.8526 9.8603 10.8536C9.90643 10.8644 9.95317 10.8712 9.99983 10.8712H10.0002C10.0005 10.8712 10.0008 10.8712 10.0008 10.8712C10.0475 10.8712 10.0942 10.8646 10.1404 10.8536C10.1447 10.8525 10.149 10.852 10.1534 10.8508C10.1954 10.84 10.2364 10.8234 10.2765 10.8028C10.2841 10.799 10.2917 10.795 10.2992 10.7908C10.3062 10.7868 10.3137 10.7839 10.3206 10.7796L15.9746 7.25401C15.985 7.31381 15.9914 7.37454 15.9914 7.43727V13.095Z"
+                          fill="#41638A"/>
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.99983 0C4.47714 0 0 4.47724 0 9.9999C0 15.5224 4.47714 20 9.99983 20C15.5225 20 20 15.5224 20 9.9999C20 4.47724 15.5225 0 9.99983 0ZM10 3.51243L15.9177 7.20247H4.0824L10 3.51243ZM15.9914 13.095H15.9908C15.9908 13.6869 15.5111 14.1665 14.9193 14.1665H5.08075C4.48887 14.1665 4.00927 13.6868 4.00927 13.095V7.43727C4.00927 7.37467 4.01567 7.31381 4.02607 7.25401L9.68003 10.7796C9.68696 10.7839 9.69436 10.7868 9.70149 10.7908C9.70896 10.795 9.71656 10.799 9.72416 10.8028C9.7641 10.8234 9.80523 10.84 9.8473 10.8508C9.85163 10.852 9.85596 10.8526 9.8603 10.8536C9.90643 10.8644 9.95317 10.8712 9.99983 10.8712H10.0002C10.0005 10.8712 10.0008 10.8712 10.0008 10.8712C10.0475 10.8712 10.0942 10.8646 10.1404 10.8536C10.1447 10.8525 10.149 10.852 10.1534 10.8508C10.1954 10.84 10.2364 10.8234 10.2765 10.8028C10.2841 10.799 10.2917 10.795 10.2992 10.7908C10.3062 10.7868 10.3137 10.7839 10.3206 10.7796L15.9746 7.25401C15.985 7.31381 15.9914 7.37454 15.9914 7.43727V13.095Z" fill="white"/>
+                </svg>
+                nurse@gmail.com
+            </div>
+        </div>
+    </div>
+    <div class="footer__info">
+        <div class="container">
+            <span>Необходима консультация специалиста!</span> Обращаем Ваше внимание на то, что данный сайт носит
+            исключительно информационный характер и ни при каких условиях не является
+            публичной офертой, определяемой положениями ч. 2 ст. 437 Гражданского кодекса Российской Федерации. Для
+            получения подробной информации
+            о стоимости, наименовании и сроках оказания услуг, пожалуйста, обращайтесь по контактным телефонам к
+            специалистам. Конкретный перечень услуг и порядок их предоставления определяется в Договоре оказания услуг,
+            оформляемым между специалистом и пациентом.
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="../slick/slick.min.js"></script>
+<script type="text/javascript" src="account-questionnaire.js"></script>
+<!--<script src="main.js"></script>-->
+</body>
+</html>

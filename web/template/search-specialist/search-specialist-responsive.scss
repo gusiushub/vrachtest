@@ -1,0 +1,393 @@
+@media (max-width: 767px) {
+
+  .navigation {
+    &__header {
+      width: 100%;
+      margin-right: 0;
+      text-align: center;
+      font-family: MPLUS-Medium, sans-serif;
+      font-size: 22px;
+      line-height: 33px;
+      color: #243C57;
+    }
+  }
+
+  .navigation--search {
+    padding-bottom: 20px;
+  }
+
+  .search {
+    flex-wrap: wrap;
+    height: auto;
+
+    &__wrapper {
+      flex-wrap: wrap;
+      width: 100%;
+      background: none;
+      border: none;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      border-radius: 0;
+    }
+    &__icon {
+      display: none;
+    }
+    &__input {
+      width: 100%;
+      padding-left: 31px;
+      padding-right: 10px;
+      margin-bottom: 10px;
+      background: #FFFFFF;
+      border: 1px solid #E2E2E2;
+      box-sizing: border-box;
+      border-radius: 6px;
+    }
+    &__city {
+      width: 100%;
+      margin-bottom: 10px;
+      background: #FFFFFF;
+      border: 1px solid #E2E2E2;
+      box-sizing: border-box;
+      border-radius: 6px;
+    }
+    .button {
+      width: 100%;
+      border-radius: 6px;
+    }
+  }
+
+  .search--small {
+    width: 100%;
+    flex-wrap: nowrap;
+
+    .search__input {
+      padding-left: 15px;
+      margin-bottom: 0;
+      border-radius: 0;
+      border-top-left-radius: 6px;
+      border-bottom-left-radius: 6px;
+    }
+    .button {
+      width: auto;
+      padding: 0 20px;
+      border-radius: 0;
+      border-top-right-radius: 6px;
+      border-bottom-right-radius: 6px;
+    }
+  }
+
+  .search-specialist {
+    padding-top: 56px;
+    margin-bottom: 48px;
+
+    .container {
+      padding: 0 5px;
+    }
+
+    &__form {
+      width: 100%;
+      border: none;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      border-radius: 0;
+      background: none;
+      padding-bottom: 0;
+    }
+    &__header {
+    }
+    &__tabs {
+      display: none;
+      font-size: 22px;
+      line-height: 33px;
+      padding-bottom: 20px;
+
+      &--mobile {
+        display: flex;
+      }
+    }
+    &__tabs-item {
+      width: 50%;
+      text-align: center;
+
+      &--active {
+        &:after {
+          bottom: -22px;
+        }
+      }
+    }
+
+    &__address {
+      padding: 0;
+      background: none;
+      border: none;
+    }
+
+    .select__new-caret {
+      &--city {
+        margin: 0 auto;
+      }
+      &--district {
+        display: none;
+      }
+      &--metro {
+        display: none;
+      }
+      &--services {
+        display: block;
+      }
+    }
+    #street {
+      display: none;
+    }
+
+    &__info-wrapper {
+
+    }
+
+    &__where {
+      flex-direction: column;
+      padding: 0;
+      margin: 10px 0;
+    }
+    &__question {
+      margin: 0;
+      text-align: center;
+      line-height: 24px;
+      height: 47px;
+      padding-top: 10px;
+    }
+    &__services {
+      padding: 0;
+      margin-bottom: 30px;
+
+      .search__question {
+        margin: 0;
+        text-align: center;
+        line-height: 24px;
+        height: 47px;
+      }
+    }
+    &__services-item {
+      display: none;
+    }
+    &__submit {
+      flex-direction: column;
+      padding: 0;
+
+      .label--checkbox-round {
+
+      }
+      .button--save {
+        margin-top: 40px;
+      }
+    }
+
+    .top-sidebar {
+      display: none;
+    }
+  }
+
+
+  .search-specialist-results {
+    .container {
+      padding: 0 10px;
+    }
+    &__header {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 17px;
+      padding-bottom: 22px;
+      border-bottom: 1px solid #E2E2E2;
+
+    }
+    &__amount {
+      width: 100%;
+      margin-bottom: 5px;
+      text-align: center;
+    }
+    &__sort {
+      width: 100%;
+      margin-bottom: 6px;
+      justify-content: center;
+    }
+    &__sort-type {
+      margin-left: 0;
+
+      span {
+      }
+    }
+    &__map {
+      width: 100%;
+      text-align: center;
+    }
+
+
+
+    .doctor {
+      display: none;
+      width: 100%;
+
+      &__photo {
+        width: 85px;
+        height: 85px;
+        margin-right: 10px;
+      }
+      &__info {
+        padding: 0;
+        height: auto;
+      }
+      &__info-wrapper {
+        &:first-of-type {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: 100%;
+        }
+      }
+      &__name {
+        margin-bottom: 6px;
+        line-height: 17px;
+      }
+      &__city{
+        display: none;
+      }
+      &__rating {
+        margin-bottom: 0;
+
+        .rating-star {
+          margin-right: 5px;
+        }
+      }
+      &__price {
+        position: static;
+      }
+      &__services {
+        margin-top: 16px;
+        font-size: 14px;
+        line-height: 21px;
+      }
+      &__more {
+        display: block;
+
+        svg {
+          width: unset;
+          height: unset;
+        }
+      }
+    }
+
+    .doctor--price {
+      &--mobile {
+        display: block;
+      }
+      &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+      }
+    }
+
+
+    &__connect {
+      margin-bottom: 55px;
+    }
+    &__connect-item {
+      font-size: 15px;
+      line-height: 22px;
+
+      svg {
+        display: none;
+      }
+    }
+
+
+    &__contacts {
+      width: 100%;
+      margin-top: 51px;
+      padding: 0 5px;
+    }
+    &__help {
+      margin-bottom: 33px;
+      span {
+      }
+    }
+    .button {
+      display: block;
+      width: 100%;
+      max-width: 316px;
+      margin: 0 auto;
+    }
+  }
+
+  .top-specialists--slider{
+    display: block;
+    background: #ffffff;
+  }
+  .top-sidebar__add {
+    display: block;
+    padding-top: 8px;
+    padding-bottom: 11px;
+    border-bottom: 1px solid #E2E2E2;
+    border-top: 1px solid #E2E2E2;
+  }
+
+
+}
+
+
+@media (max-width: 600px) {
+
+
+}
+
+
+@media (min-width: 480px) and (max-width: 767px) {
+
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1240px) {
+
+  .search-specialist {
+    .search__address-wrapper {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .select__new-caret {
+      margin-right: 15px;
+      margin-bottom: 15px;
+    }
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 960px) {
+
+  .search-specialist {
+    .top-sidebar {
+      display: none;
+    }
+    .search__address-wrapper {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .select__new-caret {
+      margin-right: 15px;
+      margin-bottom: 15px;
+    }
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+
+
+
+}
+
+@media (min-width: 960px) {
+
+
+
+}

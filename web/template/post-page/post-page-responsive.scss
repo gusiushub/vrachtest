@@ -1,0 +1,175 @@
+@media (max-width: 767px) {
+
+
+  .top-sidebar {
+    display: none;
+  }
+  .top-specialists--slider {
+    display: block;
+  }
+  .top-sidebar__add {
+    display: block;
+  }
+
+  .navigation {
+
+    &__header {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+      font-size: 22px;
+      line-height: 33px;
+    }
+    &__date {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+
+
+  .post {
+    padding-top: 0px;
+    .container {
+      padding: 0 5px;
+    }
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px;
+    }
+    &__body {
+      margin-right: 0;
+    }
+    &__photo {
+      width: 100%;
+      margin-bottom: 21px;
+      //margin-left: -5px;
+      //margin-right: -5px;
+
+      img {
+        width: 100%;
+      }
+    }
+    &__text {
+    }
+    &__quote {
+      margin: 15px 0;
+      padding-left: 10px;
+
+      span {
+        margin-right: 19px;
+      }
+    }
+    &__share {
+      flex-wrap: wrap;
+      margin-top: 0;
+      padding: 20px 31px 22px 31px;
+
+      .vacancy-info__header {
+        width: 100%;
+        text-align: center;
+      }
+    }
+    &__share-header {
+      font-size: 20px;
+      line-height: 30px;
+      text-align: center;
+    }
+    &__social {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 12px;
+
+      a {
+        margin-right: 0px;
+
+        &:last-of-type {
+        }
+      }
+      svg {
+      }
+    }
+
+
+    &__similar {
+      padding: 0 20px;
+    }
+    &__similar-head {
+      padding: 18px 0 15px 0;
+      font-size: 20px;
+      line-height: 30px;
+    }
+    &__item {
+      padding-top: 4px;
+      padding-bottom: 13px;
+      border-top: 1px solid #BABABA;
+    }
+    &__similar-date {
+      font-family: MPLUS-Regular, sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+      color: #333333;
+    }
+    &__similar-header {
+      font-size: 18px;
+      line-height: 27px;
+    }
+  }
+
+
+
+
+
+  .pagination {
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 36px;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+
+  .top-specialists--slider {
+    background: #ffffff;
+    border-top: 1px solid #E2E2E2;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+
+}
+
+
+@media (min-width: 480px) and (max-width: 767px) {
+
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1240px) {
+
+
+
+}
+
+@media (min-width: 768px) and (max-width: 960px) {
+
+
+
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+
+
+
+}
+
+@media (min-width: 960px) {
+
+
+
+}

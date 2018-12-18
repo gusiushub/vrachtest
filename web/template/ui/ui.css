@@ -1,0 +1,232 @@
+@charset "UTF-8";
+/*  COLORS  */
+/*  FONTS */
+@import url("https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:300,400,500,700,800,900&subset=cyrillic-ext");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.form {
+  display: block; }
+
+.button {
+  background: none;
+  border: none;
+  outline: none; }
+  .button--save {
+    width: 315.21px;
+    height: 60px;
+    background: linear-gradient(180deg, #F35E5E 0%, #EC1E4F 100%);
+    border: 1px solid #F35E5E;
+    box-sizing: border-box;
+    border-radius: 100px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF; }
+
+.input {
+  width: 400px;
+  height: 60px;
+  background: rgba(248, 248, 248, 0.42);
+  border: 1px solid #E2E2E2;
+  border-radius: 10px;
+  padding: 0 26px;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #919191; }
+  .input:focus {
+    outline: none; }
+  .input::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #919191; }
+  .input::-moz-placeholder {
+    /* Firefox 19+ */
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #919191; }
+  .input:-ms-input-placeholder {
+    /* IE 10+ */
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #919191; }
+  .input:-moz-placeholder {
+    /* Firefox 18- */
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #919191; }
+  .input--long {
+    width: 820px; }
+  .input--gender {
+    width: 311px; }
+  .input--city {
+    width: 260px;
+    height: 40px; }
+  .input--auth {
+    width: 260px;
+    background: #FFFFFF;
+    border: 1px solid #41638A;
+    box-sizing: border-box;
+    border-radius: 30px;
+    padding: 0 44px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #41638A; }
+    .input--auth::-webkit-input-placeholder {
+      /* Chrome/Opera/Safari */
+      font-family: 'M PLUS Rounded 1c', sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+      text-transform: uppercase;
+      color: #41638A; }
+    .input--auth::-moz-placeholder {
+      /* Firefox 19+ */
+      font-family: 'M PLUS Rounded 1c', sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+      text-transform: uppercase;
+      color: #41638A; }
+    .input--auth:-ms-input-placeholder {
+      /* IE 10+ */
+      font-family: 'M PLUS Rounded 1c', sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+      text-transform: uppercase;
+      color: #41638A; }
+    .input--auth:-moz-placeholder {
+      /* Firefox 18- */
+      font-family: 'M PLUS Rounded 1c', sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+      text-transform: uppercase;
+      color: #41638A; }
+  .input--password::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    font-size: 22px;
+    line-height: 33px; }
+  .input--password::-moz-placeholder {
+    /* Firefox 19+ */
+    font-size: 22px;
+    line-height: 33px; }
+  .input--password:-ms-input-placeholder {
+    /* IE 10+ */
+    font-size: 22px;
+    line-height: 33px; }
+  .input--password:-moz-placeholder {
+    /* Firefox 18- */
+    font-size: 22px;
+    line-height: 33px; }
+  .input--checkbox {
+    display: none; }
+    .input--checkbox:checked ~ .label--checkbox:before {
+      background: url("../img/checkbox-checked.svg");
+      -webkit-background-size: cover;
+      background-size: cover;
+      border: none; }
+  .input--select {
+    background: transparent;
+    border: none;
+    border-radius: 10px;
+    padding: 0 26px; }
+
+.select__new-caret {
+  background: url("../img/down-arrow-fill.jpg") 100% 50% no-repeat, rgba(248, 248, 248, 0.42);
+  border: 1px solid #E2E2E2;
+  border-radius: 10px;
+  overflow: hidden; }
+  .select__new-caret option {
+    width: 249px; }
+  .select__new-caret--gender {
+    width: 300px; }
+  .select__new-caret--city {
+    width: 249px; }
+
+.label--checkbox {
+  position: relative;
+  padding-left: 26px;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 20px;
+  color: #686868;
+  cursor: pointer; }
+  .label--checkbox:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -10px;
+    width: 20px;
+    height: 20px;
+    background: #FFFFFF;
+    border: 1px solid #E2E2E2;
+    box-sizing: border-box;
+    border-radius: 4px; }
+
+/*  ╨Я╨а╨Ю╨д╨Ш╨Ы╨Ш ╨Ф╨Ю╨Ъ╨в╨Ю╨а╨Ю╨Т  */
+.doctor {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  color: #333333; }
+  .doctor--vertical {
+    flex-direction: column;
+    justify-content: flex-start; }
+  .doctor__photo {
+    margin-right: 15px; }
+  .doctor__name {
+    font-size: 16px;
+    line-height: 19px; }
+  .doctor__city {
+    font-size: 14px;
+    line-height: 21px; }
+  .doctor__services {
+    font-size: 12.5em;
+    line-height: 19px; }
+    .doctor__services span {
+      color: #919191; }
+  .doctor__rating .rating-star svg {
+    fill: #C4C4C4; }
+  .doctor__rating .rating-star--full svg {
+    fill: #41638A; }
+
+.doctor--vertical {
+  width: 180px;
+  text-align: center; }
+  .doctor--vertical .doctor__photo {
+    width: 144px;
+    height: 144px;
+    overflow: hidden;
+    margin-right: 0;
+    margin-bottom: 9px; }
+  .doctor--vertical .doctor__name {
+    padding-bottom: 13px;
+    border-bottom: 1px solid #41638A;
+    margin-bottom: 9px; }
+  .doctor--vertical .doctor__city {
+    margin-bottom: 1px; }
+  .doctor--vertical .doctor__service {
+    margin-bottom: 7px; }
+
+/*# sourceMappingURL=ui.css.map */

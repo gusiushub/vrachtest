@@ -1,0 +1,133 @@
+@import '../ui/variables.scss';
+
+.top-specialists--slider {
+  display: none;
+}
+.top-sidebar__add {
+  display: none;
+}
+
+.navigation {
+  padding-bottom: 14px;
+}
+.navigation__header {
+  width: 100%;
+  margin-bottom: 15px;
+  padding-bottom: 33px;
+  border-bottom: 1px solid #E2E2E2;
+}
+
+.pagination {
+  display: block;
+  width: 300px;
+  //margin: 0 auto;
+  margin-bottom: 60px;
+
+  &__words {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: MPLUS-Medium, sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    color: #41638A;
+  }
+  &__back {
+    svg {
+      transform: rotate(180deg);
+    }
+  }
+  &__numbers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    margin-top: 22px;
+    background: #FFFFFF;
+    border: 1px solid #E2E2E2;
+    border-radius: 100px;
+  }
+  &__item {
+    flex-grow: 1;
+    font-family: MPLUS-Medium, sans-serif;
+    font-size: 18px;
+    line-height: 36px;
+    color: #686868;
+    text-align: center;
+
+    &--active {
+      flex-grow: 0;
+      height: 38px;
+      width: 38px;
+      background: #FFFFFF;
+      border: 1px solid #CAE2FF;
+      border-radius: 100px;
+      color: #41638A;
+    }
+    &--last {
+      svg {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+
+
+
+.posts {
+  padding-top: 51px;
+  padding-bottom: 100px;
+
+  .container {
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__filter {
+    display: flex;
+    width: 340px;
+    height: 40px;
+    background: #EDF0F6;
+    border: 1px solid #E2E2E2;
+    border-radius: 100px;
+  }
+  &__filter-item {
+    flex-grow: 1;
+    padding: 0 11px;
+    font-family: MPLUS-Regular, sans-serif;
+    font-size: 18px;
+    line-height: 38px;
+    color: #686868;
+    text-align: center;
+
+    &--active {
+      font-family: MPLUS-Medium, sans-serif;
+      line-height: 36px;
+      color: #41638A;
+      background: #FFFFFF;
+      border: 1px solid #CAE2FF;
+      border-radius: 100px;
+    }
+  }
+
+
+  .news {
+    height: auto;
+    margin-bottom: 40px;
+    padding-bottom: 39px;
+    border-bottom: 1px solid #E2E2E2;
+
+    &:last-of-type {
+      margin-bottom: 59px;
+      border: none;
+    }
+
+    &__more--mobile {
+      display: none;
+    }
+  }
+}

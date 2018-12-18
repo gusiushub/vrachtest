@@ -1,0 +1,256 @@
+@import '../ui/variables.scss';
+
+
+.vacancy {
+  padding-top: 15px;
+  padding-bottom: 87px;
+
+  .container {
+    width: 100%;
+    max-width: 1300px;
+  }
+
+  &__item-wrapper {
+    //padding: 25px 30px 0px 30px;
+    padding: 0 30px;
+
+    &:first-of-type {
+      .vacancy__item {
+        border: none;
+      }
+    }
+  }
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 30px;
+    //padding-bottom: 24px;
+    border-top: 1px solid #E2E2E2;
+    //cursor: pointer;
+
+    &--publish {
+      .vacancy__publish {
+        display: block;
+
+        &--mobile {
+          display: none;
+        }
+      }
+      .vacancy__unpublished {
+        display: none;
+      }
+    }
+    &--unpublished {
+     .vacancy__unpublished {
+       display: block;
+     }
+      .vacancy__publish {
+        display: none;
+      }
+      .vacancy__actions-wrapper {
+        display: none;
+      }
+    }
+  }
+  &__info {
+    font-family: MPLUS-Medium, sans-serif;
+  }
+  &__header {
+    font-size: 18px;
+    line-height: 27px;
+    color: #333333;
+  }
+  &__salary {
+    font-size: 14px;
+    line-height: 21px;
+    color: #919191;
+    margin-bottom: 5px;
+  }
+  &__city {
+    font-size: 14px;
+    line-height: 21px;
+    color: #919191;
+
+  }
+  &__company {
+    font-size: 14px;
+    line-height: 21px;
+    color: #919191;
+
+  }
+  &__response {
+    display: flex;
+    align-items: center;
+    font-family: MPLUS-Medium, sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    color: #333333;
+
+    svg {
+      margin-right: 8px;
+    }
+    span {
+
+    }
+  }
+  &__view {
+    display: flex;
+    align-items: center;
+    font-family: MPLUS-Medium, sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    color: #333333;
+
+    svg {
+      margin-right: 8px;
+    }
+    span {
+
+    }
+  }
+  &__wrapper {
+    display: flex;
+    align-items: center;
+  }
+  &__edit {
+      width: 215px;
+      height: 40px;
+      margin-right: 29px;
+      font-family: MPLUS-Regular, sans-serif;
+      font-size: 18px;
+      line-height: 40px;
+      color: #333333;
+      text-align: center;
+      background: #FFFFFF;
+      border: 1px solid #F35E5E;
+      border-radius: 100px;
+  }
+  &__actions {
+    position: relative;
+  }
+  &__publish {
+    font-family: MPLUS-Regular, sans-serif;
+    font-size: 14px;
+    //line-height: 21px;
+    line-height: 40px;
+    text-decoration-line: underline;
+    color: #41638A;
+    white-space: nowrap;
+
+    &--mobile {
+      display: none;
+    }
+  }
+  &__unpublished {
+    font-family: MPLUS-Regular, sans-serif;
+    font-size: 14px;
+    //line-height: 21px;
+    line-height: 40px;
+    text-decoration-line: underline;
+    color: #41638A;
+    white-space: nowrap;
+  }
+  &__actions-wrapper {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    //margin-top: 13px;
+  }
+  &__delete {
+    position: relative;
+    cursor: pointer;
+    margin-right: 25px;
+
+    span {
+      display: none;
+      position: absolute;
+      //top: 100%;
+      top: 75%;
+      left: 50%;
+      height: 31px;
+      padding: 7px 16px 0 16px;
+      //padding-top: 7px;
+      text-align: center;
+      transform: translateX(-50%);
+      background: url("../img/hint.png") center no-repeat;
+      -webkit-background-size: cover;
+      background-size: cover;
+      font-family: MPLUS-Regular, sans-serif;
+      font-size: 14px;
+      //line-height: 25px;
+      line-height: 21px;
+      color: #333333;
+    }
+
+    &:hover {
+      span {
+        display: block;
+      }
+    }
+
+    &--mobile {
+      display: none;
+      font-family: MPLUS-Regular, sans-serif;
+      font-size: 14px;
+      line-height: 21px;
+      text-decoration-line: underline;
+      color: #41638A;
+    }
+  }
+  &__copy {
+    position: relative;
+    cursor: pointer;
+
+    span {
+      display: none;
+      position: absolute;
+      //top: 100%;
+      top: 75%;
+      left: 50%;
+      height: 31px;
+      padding: 7px 16px 0 16px;
+      //padding-top: 7px;
+      text-align: center;
+      transform: translateX(-50%);
+      background: url("../img/hint.png") center no-repeat;
+      -webkit-background-size: cover;
+      background-size: cover;
+      font-family: MPLUS-Regular, sans-serif;
+      font-size: 14px;
+      //line-height: 25px;
+      line-height: 21px;
+      color: #333333;
+    }
+
+    &:hover {
+      span {
+        display: block;
+      }
+    }
+
+    &--mobile {
+      display: none;
+      font-family: MPLUS-Regular, sans-serif;
+      font-size: 14px;
+      line-height: 21px;
+      text-decoration-line: underline;
+      color: #41638A;
+    }
+  }
+
+
+  .button {
+    display: block;
+    width: 100%;
+    max-width: 316px;
+    height: 60px;
+    margin: 0 auto;
+    margin-top: 75px;
+  }
+}

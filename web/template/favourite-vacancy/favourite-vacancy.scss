@@ -1,0 +1,261 @@
+@import '../ui/variables.scss';
+
+
+.navigation--favourite {
+  .navigation__tabs-item {
+    &--mobile {
+      display: none;
+    }
+  }
+}
+
+
+.favourite-vacancy {
+  padding-top: 50px;
+  padding-bottom: 84px;
+
+}
+
+
+
+.job {
+  &__items {
+    width: 100%;
+    max-width: 820px;
+  }
+  &__item {
+    position: relative;
+    padding: 14px 30px 14px 20px;
+    background: #FFFFFF;
+    border: 1px solid #E2E2E2;
+    margin-bottom: 18px;
+
+    font-family: MPLUS-Regular, sans-serif;
+  }
+  &__item-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right: 40px;
+  }
+  &__header {
+    margin-bottom: 9px;
+    font-family: MPLUS-Medium, sans-serif;
+    font-size: 22px;
+    line-height: 33px;
+    text-decoration-line: underline;
+    color: $dark-blue;
+  }
+  &__salary {
+    margin-bottom: 9px;
+    font-family: MPLUS-Medium, sans-serif;
+    color: #243c57;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+
+    span {
+      font-family: MPLUS-Regular, sans-serif;
+    }
+  }
+  &__region {
+    width: 100%;
+    margin-bottom: 9px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+
+    color: #919191;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  &__company-name {
+    width: 100%;
+  }
+  &__icon {
+    width: 15px;
+    height: 11px;
+    max-height: 16px;
+    margin-right: 4px;
+  }
+  &__text {
+    width: 100%;
+    margin-bottom: 25px;
+
+    color: #333333;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &__logo {
+
+    img {
+
+    }
+
+    &--small {
+      display: none;
+      width: 80px;
+      height: 80px;
+
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+
+    font-size: 14px;
+    line-height: 21px;
+    color: #919191;
+  }
+  &__apply {
+    color: #41638A;
+    cursor: pointer;
+    margin-right: 76px;
+  }
+  &__remove {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    font-family: MPLUS-Medium, sans-serif;
+    cursor: pointer;
+
+    svg {
+      margin-right: 6px;
+    }
+  }
+
+
+  &__item-deleted {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.85);
+
+    &--show {
+      display: block;
+    }
+  }
+  &__favourite {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 10.79px;
+    left: 21.52%;
+    font-family: MPLUS-Medium, sans-serif;
+    color: #41638A;
+    cursor: pointer;
+    background: #ffffff;
+
+    svg {
+      margin-right: 3px;
+    }
+  }
+}
+
+
+
+
+
+
+.empty {
+  display: none;
+  max-width: 800px;
+  padding-top: 93px;
+  padding-bottom: 93px;
+
+  &__header {
+    margin-bottom: 30px;
+    font-family: MPLUS-Medium, sans-serif;
+    font-size: 26px;
+    line-height: 30px;
+    color: #243C57;
+  }
+  &__text {
+    font-family: MPLUS-Regular, sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    color: #243C57;
+  }
+}
+
+
+
+
+
+
+
+
+.pagination {
+  display: none;
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+
+  &__words {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: MPLUS-Medium, sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    color: #41638A;
+  }
+  &__back {
+    svg {
+      transform: rotate(180deg);
+    }
+  }
+  &__numbers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    margin-top: 22px;
+    background: #FFFFFF;
+    border: 1px solid #E2E2E2;
+    border-radius: 100px;
+  }
+  &__item {
+    flex-grow: 1;
+    font-family: MPLUS-Medium, sans-serif;
+    font-size: 18px;
+    line-height: 36px;
+    color: #686868;
+    text-align: center;
+
+    &--active {
+      flex-grow: 0;
+      height: 38px;
+      width: 38px;
+      background: #FFFFFF;
+      border: 1px solid #CAE2FF;
+      border-radius: 100px;
+      color: #41638A;
+    }
+    &--last {
+      svg {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+}

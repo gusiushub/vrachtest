@@ -1,0 +1,150 @@
+
+@media (max-width: 767px) {
+
+  .form {
+    height: 60px;
+    overflow: hidden;
+
+    &--show {
+      height: auto;
+
+      .form__head {
+        svg {
+          transform: rotate(180deg);
+        }
+      }
+    }
+
+    .container {
+      padding: 0 5px;
+    }
+    &__head {
+      display: flex;
+    }
+    &__item {
+
+      &:after {
+        display: none;
+      }
+      &--textarea {
+        padding-top: 0;
+      }
+      &--submit {
+        margin-top: 0;
+      }
+    }
+    .form__services-wrapper--mobile {
+      display: block;
+    }
+    .select__new-caret {
+      //display: block;
+
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &__wrapper--services {
+      display: none;
+    }
+    &__wrapper {
+      &:first-of-type {
+        width: 100%;
+      }
+    }
+    &__label {
+      width: 100%;
+      max-width: 400px;
+
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &__areas-content {
+      display: none;
+    }
+    &__areas-tabs {
+      display: none;
+    }
+    &__textarea {
+      display: block;
+    }
+    &__publish {
+      margin-top: 32px;
+
+      .form__services-item {
+        margin: 0;
+      }
+    }
+    .input {
+      width: 100%;
+      max-width: 400px;
+
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .select__new-caret {
+      width: 100%;
+      max-width: 400px;
+    }
+    &__area-tab {
+      width: 100%;
+      max-width: 381px;
+    }
+    &__area {
+      display: block;
+      margin-bottom: 23px;
+
+      &--show {
+        padding-bottom: 20px;
+      }
+    }
+    &__textarea.input {
+      width: 100%;
+      margin-bottom: 9px;
+    }
+    &__services-item {
+      width: 100%;
+      line-height: 30px;
+      padding-left: 26px;
+    }
+    &__file {
+      display: flex;
+      align-items: center;
+      padding-left: 17px;
+      margin-left: 0;
+      font-size: 14px;
+
+      svg {
+        margin-right: 10px;
+      }
+    }
+    &__publish {
+      margin-left: 0;
+
+      .form__services-item {
+        padding-left: 0;
+      }
+    }
+  }
+
+}
+@media (max-width: 767px) {
+
+
+}
+@media (min-width: 480px) and (max-width: 767px) {
+
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1240px) {
+
+
+
+}
+
+
+@media (min-width: 960px) {
+
+
+
+}

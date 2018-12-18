@@ -1,0 +1,114 @@
+@media (max-width: 767px) {
+
+
+  .top-sidebar {
+    display: none;
+  }
+  .top-specialists--slider {
+    display: block;
+  }
+  .top-sidebar__add {
+    display: block;
+    padding-top: 8px;
+    padding-bottom: 11px;
+    border-bottom: 1px solid #E2E2E2;
+    border-top: 1px solid #E2E2E2;
+  }
+
+    .pagination {
+    //display: block;
+      margin: 0 auto;
+    }
+
+
+  .navigation {
+
+    &__header {
+      padding-bottom: 22px;
+      margin-bottom: 20px;
+    }
+  }
+
+
+  .posts {
+    .container {
+      padding: 0 5px;
+    }
+
+    .news {
+      width: 100%;
+      margin-bottom: 20px;
+      padding-bottom: 17px;
+
+      &__photo {
+        width: 120px;
+        height: 120px;
+        margin-right: 11px;
+      }
+      &__header {
+        font-size: 16px;
+        line-height: 24px;
+      }
+      &__date {
+        font-size: 14px;
+        line-height: 21px;
+        margin: 0;
+      }
+      &__text {
+        height: 84px;
+        overflow: hidden;
+        font-size: 14px;
+        line-height: 21px;
+      }
+      &__more {
+        display: none;
+
+        &--mobile {
+          display: block;
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+
+
+}
+
+
+@media (max-width: 600px) {
+
+
+}
+
+
+@media (min-width: 480px) and (max-width: 767px) {
+
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1240px) {
+
+
+
+}
+
+@media (min-width: 768px) and (max-width: 960px) {
+
+
+
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+
+
+
+}
+
+@media (min-width: 960px) {
+
+
+
+}

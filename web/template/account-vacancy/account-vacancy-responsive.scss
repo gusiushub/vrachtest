@@ -1,0 +1,150 @@
+@media (max-width: 767px) {
+
+  .vacancy {
+    padding-bottom: 61px;
+
+    .container {
+      padding: 0 5px;
+    }
+    &__item-wrapper {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    &__item {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+
+      &--publish {
+        .vacancy__publish {
+          display: none;
+
+          &--mobile {
+            display: block;
+          }
+        }
+      }
+      &--unpublished {
+
+      }
+    }
+    &__response {
+      margin-right: 20px;
+    }
+    &__wrapper {
+      flex-wrap: wrap;
+      width: 100%;
+    }
+    &__actions {
+      width: 100%;
+    }
+    &__actions-wrapper {
+      position: static;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+    &__edit {
+      width: 100%;
+      margin-right: 0;
+      margin-top: 14px;
+      margin-bottom: 14px;
+    }
+    &__publish {
+      line-height: 21px;
+    }
+    &__unpublished {
+      line-height: 21px;
+      text-align: center;
+    }
+    &__delete {
+      display: none;
+
+      &--mobile {
+        display: block;
+      }
+    }
+    &__copy {
+      display: none;
+
+      &--mobile {
+        display: block;
+      }
+    }
+  }
+
+  .button {
+    margin-top: 49px;
+  }
+
+}
+@media (min-width: 480px) and (max-width: 767px) {
+
+
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1240px) {
+
+
+}
+
+
+@media (min-width: 768px) and (max-width: 960px) {
+
+  .vacancy {
+    &__response {
+      margin-right: 10px;
+    }
+    &__edit {
+      width: 195px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+
+}
+
+
+@media (min-width: 960px) {
+
+
+
+}
+
+
+@media (min-width: 768px) {
+
+  .vacancy {
+
+    &__item-wrapper {
+      //padding: 25px 30px 0px 30px;
+      //border: 1px solid #FFFFFF;
+
+      &:hover {
+        //border: 1px solid #E2E2E2;
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+
+        .vacancy__item {
+          border: none;
+
+          &--publish {
+              .vacancy__actions-wrapper {
+                display: flex;
+              }
+          }
+        }
+      }
+    }
+    //&__item {
+    //  &--publish {
+    //    &:hover {
+    //      .vacancy__actions-wrapper {
+    //        display: flex;
+    //      }
+    //    }
+    //  }
+    //}
+  }
+
+}
